@@ -1,0 +1,245 @@
+Pergunta: Qual comando usado para descobrir em que diretorio estamos?
+A) pwd
+B) ls
+C) pwd -l
+D) ls -l
+Resposta Correta: pwd
+
+Pergunta: Qual o comando para listar arquivos ocultos no diretorio?
+A) ls -a
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -a
+
+Pergunta: eu quero descobrir quais são as permissões dos meus diretorios qual comando usar?
+A) ls -al
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -al
+
+Pergunta: Qual o atalho para ver os arquivos ocultos e permissões do diretorio?
+A) ll
+B) ls -l
+C) ls -a
+D) ls -c
+Resposta Correta: ll
+
+Pergunta: Qual o atalho para ver os arquivos do diretorio?
+A) ll
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: ls
+
+Pergunta: Eu quero descobrir quais são os atalhos do comando cd qual comando usar?
+A) ll
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: cd --help
+
+Pergunta: Qual o comando para limpar a tela?
+A) clear
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: clear
+
+Pergunta: Estou na /home/usuario e quero entrar na pasta /etc como poderia fazer isso sabendo que /etc está dentro de /home?
+A) cd /home/etc
+B) cd ..
+C) cd .
+D) cd /var
+Resposta Correta: cd /home/etc
+
+Pergunta: Quando o comando para ir direto para home área?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd
+
+Pergunta: Acabei de sair de um diretorio e quero retornar para ele de forma prática, quando comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd -
+
+Pergunta: Eu desejo criar um diretorio chamado valorant, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant
+
+Pergunta: Eu desejo criar um diretorio chamado valorant com outro diretorio chamado chars, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir -p valorant/chars
+
+Pergunta: Estou criando um diretorio chamado valorant 2, porém cria 2 diretorios por conta do espaço como resolver isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant\ 2
+
+Pergunta: Como eu crio um arquivo chamado champs?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs
+Resposta Correta: touch champs
+
+Pergunta: Como eu crio um arquivo chamado champs e outro chamado arms?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs arms
+Resposta Correta: touch champs arms
+
+Pergunta: Eu tenho um diretorio chamado valorant e quero excluir qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rmdir valorant
+Resposta Correta: rmdir valorant
+
+Pergunta: Eu tenho um diretorio chamado valorant e outro sub diretorio chamado chars dentro como excluir tudo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -r valorant
+Resposta Correta: rm -r valorant
+
+Pergunta: Quando comando eu forço uma remoção de diretorio chamado valorant?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -rf valorant
+Resposta Correta: rm -rf valorant
+
+Pergunta: Eu tenho um arquivo chamado champs como exclui-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm champs
+Resposta Correta: rm champs
+
+Pergunta: Eu quero criar 2 diretorios valorant e league sem ser um dentro do outro?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant league
+Resposta Correta: mkdir valorant league
+
+Pergunta: Estou em um diretorio e quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r * ../valorant
+Resposta Correta: cp -r * ../valorant
+
+Pergunta: Estou em um diretorio chamado champs quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r champs/* valorant
+Resposta Correta: cp -r champs/* valorant
+
+Pergunta: Estou em um diretorio chamado valorant com conteúdo dentro e quero mover para diretorio champs como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant/* champs
+Resposta Correta: mv valorant/* champs
+
+Pergunta: Estou em um diretorio chamado valorant porém quero renomea-lo para champs como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant champs
+Resposta Correta: mv valorant champs
+
+Pergunta: Qual comando para ver o histórico de comandos utilizado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) history
+Resposta Correta: history
+
+Pergunta: Estou querendo descobrir os arquivos que tenham o prefixo arq?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq*
+Resposta Correta: ls arq*
+
+Pergunta: Quero descobrir os arquivos que tenham prefixo arq e tenham 2 caracteres depois?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq??
+Resposta Correta: ls arq??
+
+Pergunta: Quero descobrir arquivos que tenham 1?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls *1*
+Resposta Correta: ls *1*
+
+Pergunta: Quero descobrir arquivos que tenham prefixo arq e que tenham sufixo de 1 a 5?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq[1-5]
+Resposta Correta: ls arq[1-5]
+
+Pergunta: Quero descobrir os arquivos que tenham sufixo entre 1 a 5 e que tenham 3 caracteres antes?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls ???[1-5]
+Resposta Correta: ls ???[1-5]
+
+Pergunta: qual comando posso usar para ler um arquivo chamado services de forma geral?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat services
+Resposta Correta: cat services
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep http *
+Resposta Correta: grep http *
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir onde está localizada a string http nos meus arquivos da pasta atual porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir em qual arquivo está localizada a string usuario nos meus arquivos da pasta atual?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -l http *
+Resposta Correta: grep -l http *
+
