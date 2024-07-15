@@ -12,14 +12,25 @@ class QuizApp(QWidget):
         super().__init__()
 
         self.questions = load_questions_from_txt('questions.txt')
-        shuffle(self.questions)  # Embaralhe a lista de perguntas
-
+        self.organize_questions_by_level()
+        self.current_level = 1
         self.current_question_index = 0
         self.lives = 5
         self.consecutive_errors = 0
         self.heart_icon_path = 'heart_icon.png'  # Salve a imagem nesse caminho antes de executar
         self.initUI()
         self.display_question()
+
+    def organize_questions_by_level(self):
+        self.levels = {}
+        level_size = 10
+        level = 1
+        for i in range(0, len(self.questions), level_size):
+            self.levels[level] = self.questions[i:i + level_size]
+            level_size += 10
+            level += 1
+        for level in self.levels:
+            shuffle(self.levels[level])
 
     def initUI(self):
         self.layout = QVBoxLayout()
@@ -52,6 +63,11 @@ class QuizApp(QWidget):
         self.question_label.setWordWrap(True)  # Permitir quebra de linha
         self.question_label.setMaximumWidth(750)  # Definir largura máxima
         self.layout.addWidget(self.question_label)
+
+        self.remaining_questions_label = QLabel(self)
+        self.remaining_questions_label.setFont(QFont('Arial', 14))
+        self.remaining_questions_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.remaining_questions_label)
 
         self.answer_input = QLineEdit(self)
         self.answer_input.setFont(QFont('Arial', 14))
@@ -93,18 +109,19 @@ class QuizApp(QWidget):
                 self.close()
             return
 
-        if self.current_question_index < len(self.questions):
+        current_level_questions = self.levels.get(self.current_level, [])
+        if self.current_question_index < len(current_level_questions):
             self.update_hearts()
-            question = self.questions[self.current_question_index]
+            question = current_level_questions[self.current_question_index]
             self.question_label.setText(question["question"])
             self.question_label.adjustSize()  # Ajusta o tamanho da QLabel com base no conteúdo
             self.answer_input.clear()  # Limpar o campo de entrada de resposta
 
             self.correct_answer = question["correct_answer"].strip().lower()
             self.options = question["options"]
+            self.update_remaining_questions()
         else:
-            QMessageBox.information(self, "Fim do Quiz", "Você concluiu todas as perguntas!")
-            self.close()
+            self.advance_level()
 
     def update_hearts(self):
         for i in range(5):
@@ -112,6 +129,11 @@ class QuizApp(QWidget):
                 self.heart_labels[i].setPixmap(QPixmap(self.heart_icon_path).scaled(32, 32, Qt.KeepAspectRatio))
             else:
                 self.heart_labels[i].clear()
+
+    def update_remaining_questions(self):
+        total_questions = len(self.levels[self.current_level])
+        questions_left = total_questions - self.current_question_index
+        self.remaining_questions_label.setText(f"Questões restantes para completar o nível {self.current_level}: {questions_left}")
 
     def check_answer(self):
         user_answer = self.answer_input.text().strip().lower()
@@ -137,14 +159,28 @@ class QuizApp(QWidget):
             suggestion_text += f"{option_key}: {option_text}\n"
         QMessageBox.information(self, "Sugestão de Resposta", suggestion_text)
 
+    def advance_level(self):
+        self.current_level += 1
+        if self.current_level in self.levels:
+            QMessageBox.information(self, "Subiu de Nível", f"Parabéns! Você avançou para o nível {self.current_level}!")
+            self.lives = 5  # Resetar vidas
+            self.current_question_index = 0
+            self.display_question()
+        else:
+            QMessageBox.information(self, "Fim do Quiz", "Você concluiu todas as perguntas!")
+            self.close()
+
     def restart_game(self):
         self.lives = 5
+        self.current_level = 1
         self.current_question_index = 0
-        shuffle(self.questions)
+        for level in self.levels:
+            shuffle(self.levels[level])
         self.display_question()
 
     def clear_question(self):
         self.display_question()
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
