@@ -75,11 +75,11 @@ C) cd
 D) mkdir valorant
 Resposta Correta: mkdir valorant
 
-Pergunta: Eu desejo criar um diretorio chamado valorant com outro diretorio chamado chars, qual comando usar para cria-lo?
+Pergunta: Eu desejo criar um diretorio chamado valorant com outro diretorio chamado chars dentro dele, qual comando usar para cria-lo?
 A) cd /home/etc
 B) cd ..
 C) cd
-D) mkdir valorant
+D) mkdir -p valorant/chars
 Resposta Correta: mkdir -p valorant/chars
 
 Pergunta: Estou criando um diretorio chamado valorant 2, porém cria 2 diretorios por conta do espaço como resolver isso?
@@ -240,6 +240,89 @@ Pergunta: Quero descobrir em qual arquivo está localizada a string usuario nos 
 A) cd /home/etc
 B) cd ..
 C) cd
-D) grep -l http *
-Resposta Correta: grep -l http *
+D) grep -l usuario *
+Resposta Correta: grep -l usuario *
 
+Pergunta: Qual o comando para descobrir o ip de uma maquina no linux?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ip addr
+Resposta Correta: ip addr
+
+Pergunta: Tenho uma maquina que tem o ip 192.172.1.13 e o usuario geromora como faço para obter uma conexão ssh?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ssh geromora@192.172.1.13
+Resposta Correta: ssh geromora@192.172.1.13
+
+Pergunta: Acabei de entrar em uma maquina linux e quero atualizar, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo apt update
+Resposta Correta: sudo apt update
+
+Pergunta: Tenho um arquivo com as senhas, o nome do arquivo é passwd, qual comando para ver o que tem no arquivo paginado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) more passwd
+Resposta Correta: more passwd
+
+Pergunta: Como ler o que tem no arquivo passwd usando as setas pra cima e para baixo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) less passwd
+Resposta Correta: less passwd
+
+Pergunta: Como ler o final do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail passwd
+Resposta Correta: tail passwd
+
+Pergunta: Como ler as ultimas 3 linhas finais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -n 3 passwd
+Resposta Correta: tail -n 3 passwd
+
+Pergunta: Como ler as linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head passwd
+Resposta Correta: head passwd
+
+Pergunta: Como ler as 3 linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 3 passwd
+Resposta Correta: head -n 3 passwd
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -name *.conf
+Resposta Correta: find / -name *.conf
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find / -name *.conf
+Resposta Correta: sudo find / -name *.conf
+
+Pergunta: Quero procurar dentro de etc um arquivo porém com no máximo 3 pasta recursivas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find /etc -maxdepth 3 *.conf
+Resposta Correta: sudo find /etc -maxdepth 3 *.conf
