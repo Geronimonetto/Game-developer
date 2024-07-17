@@ -409,8 +409,12 @@ A) cd /home/etc
 B) cd ..
 C) cd
 D) grep root passwd >> texto.txt
+<<<<<<< HEAD
 Resposta Correta: grep root passwd >> texto.txt
 
 
 
 
+=======
+Resposta Correta: grep root passwd >> texto.txt
+>>>>>>> e52347916d22a9efb199b7936c000eee94ba7a0d
