@@ -326,3 +326,91 @@ B) cd ..
 C) cd
 D) sudo find /etc -maxdepth 3 *.conf
 Resposta Correta: sudo find /etc -maxdepth 3 *.conf
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 5 minutos atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -amin -5
+Resposta Correta: find . -amin -5
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 2 dias atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -atime -5
+Resposta Correta: find . -atime -2
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 100MB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +100M
+Resposta Correta: sudo find . -size +100M
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 3GB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +3G
+Resposta Correta: sudo find . -size +3G
+
+Pergunta: Quero descobrir em todas as pastas os arquivos com final .conf ignorando o case, com 3 pastas apenas a frente?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -maxdepth 3 -iname *.conf
+Resposta Correta: find / -maxdepth 3 -iname *.conf
+
+Pergunta: Qual o comando para ler os arquivos e mostrar os tamanhos?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -lh
+Resposta Correta: ls -lh
+
+Pergunta: Quero encontrar em services tudo sobre ssh e depois armazenar em um arquivo txt chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services > texto.txt
+Resposta Correta: grep ssh services > texto.txt
+
+Pergunta: Eu ja tenho um arquivo texto.txt e quero acrescentar as saidas do passwd que tenham root?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep root passwd >> texto.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver os arquivos do diretorio com a permissão e acrescentar ao arquivo texto.txt ja existente
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -l >> texto.txt
+Resposta Correta: ls -l texto.txt
+
+Pergunta: Eu ja tenho um arquivo texto.txt e quero acrescentar as saidas do passwd que tenham root?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep root passwd >> texto.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero pegar tudo que tem em texto.txt e ordenar em um novo arquivo chamado texto2.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | sort > texto2.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver as ultimas 5 linhas do arquivo syslog e adicionar em um novo arquivo chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep root passwd >> texto.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+
+
+
