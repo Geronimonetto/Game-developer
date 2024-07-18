@@ -390,14 +390,14 @@ C) cd
 D) ls -l >> texto.txt
 Resposta Correta: ls -l texto.txt
 
-Pergunta: Eu ja tenho um arquivo texto.txt e quero acrescentar as saidas do passwd que tenham root?
+Pergunta: quero buscar tudo sobre ssh em services e colocar em um arquivo chamado service.txt?
 A) cd /home/etc
 B) cd ..
 C) cd
-D) grep root passwd >> texto.txt
-Resposta Correta: grep root passwd >> texto.txt
+D) grep ssh services > service.txt
+Resposta Correta: grep ssh services > service.txt
 
-Pergunta: Quero pegar tudo que tem em texto.txt e ordenar em um novo arquivo chamado texto2.txt?
+Pergunta: Quero ler tudo que tem em texto.txt e ordenar em um novo arquivo chamado texto2.txt?
 A) cd /home/etc
 B) cd ..
 C) cd
@@ -408,13 +408,39 @@ Pergunta: Quero ver as ultimas 5 linhas do arquivo syslog e adicionar em um novo
 A) cd /home/etc
 B) cd ..
 C) cd
-D) grep root passwd >> texto.txt
-<<<<<<< HEAD
-Resposta Correta: grep root passwd >> texto.txt
+D) tail -n 5 > texto.txt
+Resposta Correta: tail -n 5 > texto.txt
+
+Pergunta: Pegue as 50 primeiras linhas do arquivo services em etc e crie um novo arquivo chamado edit1.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 50 etc/services > edit1.txt
+Resposta Correta: head -n 50 etc/services > edit1.txt
+
+Pergunta: Tenho um arquivo chamado service.txt e quero incrementar tudo que tenha sobre ssh em services nele, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services >> service.txt
+Resposta Correta: grep ssh services >> service.txt
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver a quantidade de linhas e bites?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc
+Resposta Correta: cat syslog | grep systemd | wc
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver apenas a quantidade de linhas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc -l
+Resposta Correta: cat syslog | grep systemd | wc -l
 
 
 
 
-=======
-Resposta Correta: grep root passwd >> texto.txt
->>>>>>> e52347916d22a9efb199b7936c000eee94ba7a0d
+
+
