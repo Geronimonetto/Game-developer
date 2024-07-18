@@ -1,0 +1,446 @@
+Pergunta: Qual comando usado para descobrir em que diretorio estamos?
+A) pwd
+B) ls
+C) pwd -l
+D) ls -l
+Resposta Correta: pwd
+
+Pergunta: Qual o comando para listar arquivos ocultos no diretorio?
+A) ls -a
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -a
+
+Pergunta: eu quero descobrir quais são as permissões dos meus diretorios qual comando usar?
+A) ls -al
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -al
+
+Pergunta: Qual o atalho para ver os arquivos ocultos e permissões do diretorio?
+A) ll
+B) ls -l
+C) ls -a
+D) ls -c
+Resposta Correta: ll
+
+Pergunta: Qual o atalho para ver os arquivos do diretorio?
+A) ll
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: ls
+
+Pergunta: Eu quero descobrir quais são os atalhos do comando cd qual comando usar?
+A) ll
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: cd --help
+
+Pergunta: Qual o comando para limpar a tela?
+A) clear
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: clear
+
+Pergunta: Estou na /home/usuario e quero entrar na pasta /etc como poderia fazer isso sabendo que /etc está dentro de /home?
+A) cd /home/etc
+B) cd ..
+C) cd .
+D) cd /var
+Resposta Correta: cd /home/etc
+
+Pergunta: Quando o comando para ir direto para home área?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd
+
+Pergunta: Acabei de sair de um diretorio e quero retornar para ele de forma prática, quando comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd -
+
+Pergunta: Eu desejo criar um diretorio chamado valorant, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant
+
+Pergunta: Eu desejo criar um diretorio chamado valorant com outro diretorio chamado chars dentro dele, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir -p valorant/chars
+Resposta Correta: mkdir -p valorant/chars
+
+Pergunta: Estou criando um diretorio chamado valorant 2, porém cria 2 diretorios por conta do espaço como resolver isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant\ 2
+
+Pergunta: Como eu crio um arquivo chamado champs?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs
+Resposta Correta: touch champs
+
+Pergunta: Como eu crio um arquivo chamado champs e outro chamado arms?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs arms
+Resposta Correta: touch champs arms
+
+Pergunta: Eu tenho um diretorio chamado valorant e quero excluir qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rmdir valorant
+Resposta Correta: rmdir valorant
+
+Pergunta: Eu tenho um diretorio chamado valorant e outro sub diretorio chamado chars dentro como excluir tudo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -r valorant
+Resposta Correta: rm -r valorant
+
+Pergunta: Quando comando eu forço uma remoção de diretorio chamado valorant?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -rf valorant
+Resposta Correta: rm -rf valorant
+
+Pergunta: Eu tenho um arquivo chamado champs como exclui-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm champs
+Resposta Correta: rm champs
+
+Pergunta: Eu quero criar 2 diretorios valorant e league sem ser um dentro do outro?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant league
+Resposta Correta: mkdir valorant league
+
+Pergunta: Estou em um diretorio e quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r * ../valorant
+Resposta Correta: cp -r * ../valorant
+
+Pergunta: Estou em um diretorio chamado champs quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r champs/* valorant
+Resposta Correta: cp -r champs/* valorant
+
+Pergunta: Estou em um diretorio chamado valorant com conteúdo dentro e quero mover para diretorio champs como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant/* champs
+Resposta Correta: mv valorant/* champs
+
+Pergunta: Estou em um diretorio chamado valorant porém quero renomea-lo para champs como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant champs
+Resposta Correta: mv valorant champs
+
+Pergunta: Qual comando para ver o histórico de comandos utilizado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) history
+Resposta Correta: history
+
+Pergunta: Estou querendo descobrir os arquivos que tenham o prefixo arq?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq*
+Resposta Correta: ls arq*
+
+Pergunta: Quero descobrir os arquivos que tenham prefixo arq e tenham 2 caracteres depois?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq??
+Resposta Correta: ls arq??
+
+Pergunta: Quero descobrir arquivos que tenham 1?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls *1*
+Resposta Correta: ls *1*
+
+Pergunta: Quero descobrir arquivos que tenham prefixo arq e que tenham sufixo de 1 a 5?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq[1-5]
+Resposta Correta: ls arq[1-5]
+
+Pergunta: Quero descobrir os arquivos que tenham sufixo entre 1 a 5 e que tenham 3 caracteres antes?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls ???[1-5]
+Resposta Correta: ls ???[1-5]
+
+Pergunta: qual comando posso usar para ler um arquivo chamado services de forma geral?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat services
+Resposta Correta: cat services
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep http *
+Resposta Correta: grep http *
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir onde está localizada a string http nos meus arquivos da pasta atual porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir em qual arquivo está localizada a string usuario nos meus arquivos da pasta atual?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -l usuario *
+Resposta Correta: grep -l usuario *
+
+Pergunta: Qual o comando para descobrir o ip de uma maquina no linux?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ip addr
+Resposta Correta: ip addr
+
+Pergunta: Tenho uma maquina que tem o ip 192.172.1.13 e o usuario geromora como faço para obter uma conexão ssh?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ssh geromora@192.172.1.13
+Resposta Correta: ssh geromora@192.172.1.13
+
+Pergunta: Acabei de entrar em uma maquina linux e quero atualizar, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo apt update
+Resposta Correta: sudo apt update
+
+Pergunta: Tenho um arquivo com as senhas, o nome do arquivo é passwd, qual comando para ver o que tem no arquivo paginado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) more passwd
+Resposta Correta: more passwd
+
+Pergunta: Como ler o que tem no arquivo passwd usando as setas pra cima e para baixo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) less passwd
+Resposta Correta: less passwd
+
+Pergunta: Como ler o final do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail passwd
+Resposta Correta: tail passwd
+
+Pergunta: Como ler as ultimas 3 linhas finais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -n 3 passwd
+Resposta Correta: tail -n 3 passwd
+
+Pergunta: Como ler as linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head passwd
+Resposta Correta: head passwd
+
+Pergunta: Como ler as 3 linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 3 passwd
+Resposta Correta: head -n 3 passwd
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -name *.conf
+Resposta Correta: find / -name *.conf
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find / -name *.conf
+Resposta Correta: sudo find / -name *.conf
+
+Pergunta: Quero procurar dentro de etc um arquivo porém com no máximo 3 pasta recursivas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find /etc -maxdepth 3 *.conf
+Resposta Correta: sudo find /etc -maxdepth 3 *.conf
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 5 minutos atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -amin -5
+Resposta Correta: find . -amin -5
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 2 dias atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -atime -5
+Resposta Correta: find . -atime -2
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 100MB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +100M
+Resposta Correta: sudo find . -size +100M
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 3GB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +3G
+Resposta Correta: sudo find . -size +3G
+
+Pergunta: Quero descobrir em todas as pastas os arquivos com final .conf ignorando o case, com 3 pastas apenas a frente?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -maxdepth 3 -iname *.conf
+Resposta Correta: find / -maxdepth 3 -iname *.conf
+
+Pergunta: Qual o comando para ler os arquivos e mostrar os tamanhos?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -lh
+Resposta Correta: ls -lh
+
+Pergunta: Quero encontrar em services tudo sobre ssh e depois armazenar em um arquivo txt chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services > texto.txt
+Resposta Correta: grep ssh services > texto.txt
+
+Pergunta: Eu ja tenho um arquivo texto.txt e quero acrescentar as saidas do passwd que tenham root?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep root passwd >> texto.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver os arquivos do diretorio com a permissão e acrescentar ao arquivo texto.txt ja existente
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -l >> texto.txt
+Resposta Correta: ls -l texto.txt
+
+Pergunta: quero buscar tudo sobre ssh em services e colocar em um arquivo chamado service.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services > service.txt
+Resposta Correta: grep ssh services > service.txt
+
+Pergunta: Quero ler tudo que tem em texto.txt e ordenar em um novo arquivo chamado texto2.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | sort > texto2.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver as ultimas 5 linhas do arquivo syslog e adicionar em um novo arquivo chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -n 5 > texto.txt
+Resposta Correta: tail -n 5 > texto.txt
+
+Pergunta: Pegue as 50 primeiras linhas do arquivo services em etc e crie um novo arquivo chamado edit1.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 50 etc/services > edit1.txt
+Resposta Correta: head -n 50 etc/services > edit1.txt
+
+Pergunta: Tenho um arquivo chamado service.txt e quero incrementar tudo que tenha sobre ssh em services nele, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services >> service.txt
+Resposta Correta: grep ssh services >> service.txt
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver a quantidade de linhas e bites?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc
+Resposta Correta: cat syslog | grep systemd | wc
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver apenas a quantidade de linhas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc -l
+Resposta Correta: cat syslog | grep systemd | wc -l
+
+
+
+
+
+
