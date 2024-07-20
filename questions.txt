@@ -54,7 +54,7 @@ C) cd .
 D) cd /var
 Resposta Correta: cd /home/etc
 
-Pergunta: Quando o comando para ir direto para home área?
+Pergunta: Qual o comando para ir direto para home área?
 A) cd /home/etc
 B) cd ..
 C) cd
@@ -117,7 +117,7 @@ C) cd
 D) rm -r valorant
 Resposta Correta: rm -r valorant
 
-Pergunta: Quando comando eu forço uma remoção de diretorio chamado valorant?
+Pergunta: Qual comando eu forço uma remoção de diretorio chamado valorant?
 A) cd /home/etc
 B) cd ..
 C) cd
@@ -438,6 +438,253 @@ B) cd ..
 C) cd
 D) cat syslog | grep systemd | wc -l
 Resposta Correta: cat syslog | grep systemd | wc -l
+
+Pergunta: tenho um arquivo passwd em etc porém quero ler o que tem nele e ordenar de forma decrescente em um arquivo.txt, como posso fazer isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat /etc/passwd | sort > arquivo.txt
+Resposta Correta: cat /etc/passwd | sort > arquivo.txt
+
+
+Pergunta: Usando regex, como encontrar algo no arquivo chamado american-english que comece com computer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer"
+Resposta Correta: cat american-english | grep -E "^computer"
+
+Pergunta: Usando regex, como encontrar algo no arquivo chamado american-english que comece e termine com computer e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer$" | > texto.txt
+Resposta Correta: cat american-english | grep -E "^computer$" | > texto.txt
+
+Pergunta: Usando regex com egrep, como encontrar algo no arquivo chamado american-english que comece e termine com computer e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | egrep "^computer$" | > texto.txt
+Resposta Correta: cat american-english | egrep "^computer$" | > texto.txt
+
+Pergunta: Usando regex com grep, como encontrar algo no arquivo chamado american-english que comece e termine com computer ou smartphone e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer$|^smartphone$" > texto.txt
+Resposta Correta: cat american-english | grep -E "^computer$|^smartphone$" > texto.
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com qualquer letra e tenha oot no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^.oot$" american-english
+Resposta Correta: egrep ".oot$" american-english
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f2
+Resposta Correta: cat texto.txt | cut -d " " -f2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f2
+Resposta Correta: cat texto.txt | cut -d " " -f2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do primeiro espaço até o segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f1-2
+Resposta Correta: cat texto.txt | cut -d " " -f1-2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do 5ª espaço porém trazendo do espaço 1 ao espaço 3?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f1-3,5
+Resposta Correta: cat texto.txt | cut -d " " -f1-3,5
+
+Pergunta: print na tela a palavra COMPUTER e escreva em um arquivo chamado service.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) echo "COMPUTER" service.txt
+Resposta Correta: echo "COMPUTER" service.txt
+
+Pergunta: Para localizar uma string, tal como http, no início de cada linha de um arquivo como /etc/services, podemos usar um comando?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat /etc/services | grep -E "^http"
+Resposta Correta: cat /etc/services | grep -E "^http"
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com qualquer letra e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^.oot$..." american-english
+Resposta Correta: egrep ".oot$..." american-english
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com f r ou t  e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^[frt]oot$..." american-english
+Resposta Correta: egrep "^[frt].oot$..." american-english
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com l até o  e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^[l-o]oot$..." american-english
+Resposta Correta: egrep "^[l-o].oot$..." american-english
+
+Pergunta: Qual comando usado para criar um arquivo de texto chamado arquivo.txt de forma simples?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) nano arquivo.txt
+Resposta Correta: nano arquivo.txt
+
+Pergunta: Qual comando para sair do VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :q
+Resposta Correta: :q
+
+Pergunta: Qual comando para sair sem salvar do VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :q!
+Resposta Correta: :q!
+
+Pergunta: Qual comando para inserir um texto no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) i
+Resposta Correta: i
+
+Pergunta: Qual comando para sair salvando no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :x
+Resposta Correta: :x
+
+Pergunta: como modificar uma letra sem precisar inserir nada no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) r
+Resposta Correta: r
+
+Pergunta: como modificar o nome do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :w
+Resposta Correta: :w
+
+Pergunta: como recortar uma linha no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) dd
+Resposta Correta: dd
+
+Pergunta: como recortar 5 linhas no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) 5 dd
+Resposta Correta: 5 dd
+
+Pergunta: como ir para o início do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) gg
+Resposta Correta: gg
+
+Pergunta: como ir para o final do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) G
+Resposta Correta: G
+
+Pergunta: como ir para a linha de numero 50 do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :50
+Resposta Correta: :50
+
+Pergunta: quero ir para linhas que tenha a string ssh dentro do VI?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :ssh
+Resposta Correta: :ssh
+
+Pergunta: desfaça a ultima modificação feita no VI?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) u
+Resposta Correta: u
+
+Pergunta: cole a linha copiada depois da linha atual no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) p
+Resposta Correta: p
+
+Pergunta: cole a linha copiada antes da linha atual no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) P
+Resposta Correta: P
+
+Pergunta: copie as 5 linhas a frente no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) 5 yy
+Resposta Correta: 5 yy
+
+Pergunta: Substitua a primeira palavra ssh por SSH na linha atual ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :s/ssh/SSH
+Resposta Correta: :s/ssh/SSH
+
+Pergunta: Substitua todas as palavras ssh por SSH na linha atual ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :s/ssh/SSH/g
+Resposta Correta: :s/ssh/SSH/g
+
+Pergunta: Substitua todas as palavras ssh por SSH globalmente ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :%s/ssh/SSH/g
+Resposta Correta: :%s/ssh/SSH/g
+
 
 
 
