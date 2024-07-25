@@ -685,7 +685,47 @@ C) cd
 D) :%s/ssh/SSH/g
 Resposta Correta: :%s/ssh/SSH/g
 
+Pergunta: Qual o comando para ler as variáveis de ambiente ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) env
+Resposta Correta: env
 
+Pergunta: Quero dar permissão para o usuario pode executar um arquivo chamado script.sh, como faço isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) chmod u+x script.sh
+Resposta Correta: chmod u+x script.sh
+
+Pergunta: Qual o comando para criar um script.sh?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) vi script.sh
+Resposta Correta: vi script.sh
+
+Pergunta: Qual o comando para descobrir nosso disco principal em /dev?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -l /dev | grep sda
+Resposta Correta: ls -l /dev | grep sda
+
+Pergunta: Como encontrar em var o nosso log de autenticação e achar tudo com ssh em qualquer case?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo cat /var/log/auth.log | grep -i ssh
+Resposta Correta: sudo cat /var/log/auth.log | grep -i ssh
+
+Pergunta: Como ver em tempo real as autenticações do computador no syslog?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -f /var/log/syslog
+Resposta Correta: tail -f /var/log/syslog
 
 
 
