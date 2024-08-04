@@ -1,36 +1,73 @@
 import sys
+import tempfile
+import os
+import pygame
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox, \
-    QGroupBox, QHBoxLayout
+    QHBoxLayout, QComboBox
 from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QFont, QPixmap
+from gtts import gTTS
 from questions import load_questions_from_txt
 from random import shuffle
-
 
 class QuizApp(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.questions = load_questions_from_txt('questions.txt')
-        shuffle(self.questions)
+        self.modules = load_questions_from_txt('questions.txt')
+        self.questions = []
         self.current_question_index = 0
         self.lives = 5
         self.consecutive_errors = 0
         self.heart_icon_path = 'heart_icon.png'  # Salve a imagem nesse caminho antes de executar
+        self.question_already_read = False  # Variável de controle
+        pygame.mixer.init()  # Inicializa o mixer do pygame
         self.initUI()
-        self.display_question()
 
     def initUI(self):
         self.layout = QVBoxLayout()
 
-        # Layout horizontal para os ícones de coração
+        self.module_selection = QComboBox(self)
+        self.module_selection.addItems(self.modules.keys())
+        self.module_selection.setFont(QFont('Arial', 14))
+        self.layout.addWidget(self.module_selection)
+
+        self.start_button = QPushButton('Iniciar Quiz', self)
+        self.start_button.setFont(QFont('Arial', 14))
+        self.start_button.clicked.connect(self.start_quiz)
+        self.layout.addWidget(self.start_button)
+
+        self.setLayout(self.layout)
+
+        self.setWindowTitle('Quiz App')
+        self.setGeometry(100, 100, 800, 600)
+        self.center_window()
+
+    def center_window(self):
+        frame_gm = self.frameGeometry()
+        screen = QApplication.desktop().screenNumber(QApplication.desktop().cursor().pos())
+        center_point = QApplication.desktop().screenGeometry(screen).center()
+        frame_gm.moveCenter(center_point)
+        self.move(frame_gm.topLeft())
+
+    def start_quiz(self):
+        selected_module = self.module_selection.currentText()
+        self.questions = self.modules[selected_module]
+        shuffle(self.questions)
+        self.init_quiz_ui()
+        self.display_question()
+
+    def init_quiz_ui(self):
+        for i in reversed(range(self.layout.count())):
+            self.layout.itemAt(i).widget().setParent(None)
+
         self.lives_layout = QHBoxLayout()
         self.lives_label = QLabel("Vidas:", self)
         self.lives_label.setFont(QFont('Arial', 14))
         self.lives_layout.addWidget(self.lives_label)
 
         self.heart_labels = []
-        for _ in range(5):  # Inicialmente, crie 5 labels para as vidas
+        for _ in range(5):
             heart_container = QWidget(self)
             heart_layout = QHBoxLayout(heart_container)
             heart_layout.setAlignment(Qt.AlignCenter)
@@ -40,16 +77,14 @@ class QuizApp(QWidget):
             self.lives_layout.addWidget(heart_container)
             self.heart_labels.append(heart_label)
 
-        # Remover a margem entre os widgets no layout horizontal
         self.lives_layout.setContentsMargins(0, 0, 0, 0)
-
         self.layout.addLayout(self.lives_layout)
 
         self.question_label = QLabel(self)
         self.question_label.setFont(QFont('Arial', 16))
         self.question_label.setAlignment(Qt.AlignCenter)
-        self.question_label.setWordWrap(True)  # Permitir quebra de linha
-        self.question_label.setMaximumWidth(750)  # Definir largura máxima
+        self.question_label.setWordWrap(True)
+        self.question_label.setMaximumWidth(750)
         self.layout.addWidget(self.question_label)
 
         self.remaining_questions_label = QLabel(self)
@@ -59,7 +94,7 @@ class QuizApp(QWidget):
 
         self.answer_input = QLineEdit(self)
         self.answer_input.setFont(QFont('Arial', 14))
-        self.answer_input.returnPressed.connect(self.check_answer)  # Conectar o sinal returnPressed ao slot check_answer
+        self.answer_input.returnPressed.connect(self.check_answer)
         self.layout.addWidget(self.answer_input)
 
         self.submit_button = QPushButton('Submit', self)
@@ -69,23 +104,11 @@ class QuizApp(QWidget):
 
         self.setLayout(self.layout)
 
-        self.setWindowTitle('Quiz App')
-        self.setGeometry(100, 100, 800, 600)
-        self.center_window()
-
-        # Aplicar estilo de fundo gradiente ao widget principal
         self.setStyleSheet("""
             QWidget {
                 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(240, 248, 255, 255), stop:1 rgba(173, 216, 230, 255));
             }
         """)
-
-    def center_window(self):
-        frame_gm = self.frameGeometry()
-        screen = QApplication.desktop().screenNumber(QApplication.desktop().cursor().pos())
-        center_point = QApplication.desktop().screenGeometry(screen).center()
-        frame_gm.moveCenter(center_point)
-        self.move(frame_gm.topLeft())
 
     def display_question(self):
         if self.lives <= 0:
@@ -101,15 +124,28 @@ class QuizApp(QWidget):
             self.update_hearts()
             question = self.questions[self.current_question_index]
             self.question_label.setText(question["question"])
-            self.question_label.adjustSize()  # Ajusta o tamanho da QLabel com base no conteúdo
-            self.answer_input.clear()  # Limpar o campo de entrada de resposta
+            self.question_label.adjustSize()
+            self.answer_input.clear()
 
             self.correct_answer = question["correct_answer"].strip().lower()
             self.options = question["options"]
             self.update_remaining_questions()
+
+            # Leia a questão em voz alta após um pequeno atraso para garantir que ela seja exibida na tela primeiro
+            if not self.question_already_read:
+                QTimer.singleShot(500, lambda: self.read_question_aloud(question["question"]))
+                self.question_already_read = True  # Marcar como já lida
         else:
             QMessageBox.information(self, "Fim do Quiz", "Você concluiu todas as perguntas!")
             self.close()
+
+    def read_question_aloud(self, question_text):
+        tts = gTTS(text=question_text, lang='pt')
+        with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as f:
+            temp_path = f.name
+            tts.save(temp_path)
+        pygame.mixer.music.load(temp_path)
+        pygame.mixer.music.play()
 
     def update_hearts(self):
         for i in range(5):
@@ -129,6 +165,7 @@ class QuizApp(QWidget):
             QMessageBox.information(self, "Resposta Correta", "Parabéns, você acertou!")
             self.consecutive_errors = 0
             self.current_question_index += 1
+            self.question_already_read = False  # Redefinir para a próxima pergunta
             self.display_question()
         else:
             self.lives -= 1
@@ -136,7 +173,7 @@ class QuizApp(QWidget):
             self.update_hearts()
             if self.consecutive_errors >= 2:
                 self.show_suggestion()
-                self.consecutive_errors = 0  # Reset error count after showing suggestion
+                self.consecutive_errors = 0
             if self.lives > 0:
                 QMessageBox.warning(self, "Resposta Incorreta", "Resposta errada, tente novamente!")
             self.display_question()
@@ -150,10 +187,8 @@ class QuizApp(QWidget):
     def restart_game(self):
         self.lives = 5
         self.current_question_index = 0
+        self.question_already_read = False  # Redefinir para o reinício do jogo
         shuffle(self.questions)
-        self.display_question()
-
-    def clear_question(self):
         self.display_question()
 
 

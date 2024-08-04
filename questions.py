@@ -1,16 +1,26 @@
 def load_questions_from_txt(file_path):
-    questions = []
+    modules = {}
+    current_module = None
+    question = {}
+    options = {}
+
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-    question = {}
-    options = {}
     for line in lines:
         line = line.strip()
-        if line.startswith('Pergunta:'):
-            if question:
+        if line.startswith('Módulo'):
+            if question and current_module:
                 question["options"] = options
-                questions.append(question)
+                modules[current_module].append(question)
+            current_module = line
+            modules[current_module] = []
+            question = {}
+            options = {}
+        elif line.startswith('Pergunta:'):
+            if question and current_module:
+                question["options"] = options
+                modules[current_module].append(question)
             question = {"question": line[len('Pergunta: '):]}
             options = {}
         elif line.startswith('A)'):
@@ -24,8 +34,8 @@ def load_questions_from_txt(file_path):
         elif line.startswith('Resposta Correta:'):
             question["correct_answer"] = line[len('Resposta Correta: '):]
 
-    if question:
+    if question and current_module:
         question["options"] = options
-        questions.append(question)
+        modules[current_module].append(question)
 
-    return questions
+    return modules

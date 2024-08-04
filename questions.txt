@@ -1,3 +1,4 @@
+Módulo 1: Comandos iniciais
 Pergunta: Qual comando usado para descobrir em que diretorio estamos?
 A) pwd
 B) ls
@@ -61,12 +62,14 @@ C) cd
 D) cd /var
 Resposta Correta: cd
 
-Pergunta: Acabei de sair de um diretorio e quero retornar para ele de forma prática, quando comando usar?
+Pergunta: Acabei de sair de um diretorio e quero retornar para ele de forma prática, qual comando usar?
 A) cd /home/etc
 B) cd ..
 C) cd
 D) cd /var
 Resposta Correta: cd -
+
+Módulo 2: Criando e removendo arquivos e pastas
 
 Pergunta: Eu desejo criar um diretorio chamado valorant, qual comando usar para cria-lo?
 A) cd /home/etc
@@ -215,6 +218,8 @@ C) cd
 D) cat services
 Resposta Correta: cat services
 
+Módulo 3: Procurando texto em arquivos
+
 Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http?
 A) cd /home/etc
 B) cd ..
@@ -264,6 +269,8 @@ C) cd
 D) sudo apt update
 Resposta Correta: sudo apt update
 
+Módulo 4: Leitura de arquivos
+
 Pergunta: Tenho um arquivo com as senhas, o nome do arquivo é passwd, qual comando para ver o que tem no arquivo paginado?
 A) cd /home/etc
 B) cd ..
@@ -305,6 +312,8 @@ B) cd ..
 C) cd
 D) head -n 3 passwd
 Resposta Correta: head -n 3 passwd
+
+Módulo 5: Buscando arquivos
 
 Pergunta: Como procurar os arquivos com final .conf nos seus diretorios?
 A) cd /home/etc
@@ -368,6 +377,8 @@ B) cd ..
 C) cd
 D) ls -lh
 Resposta Correta: ls -lh
+
+Módulo 6: Lendo arquivos com expressões regulares
 
 Pergunta: Quero encontrar em services tudo sobre ssh e depois armazenar em um arquivo txt chamado texto.txt?
 A) cd /home/etc
@@ -545,6 +556,7 @@ C) cd
 D) egrep "^[l-o]oot$..." american-english
 Resposta Correta: egrep "^[l-o].oot$..." american-english
 
+Módulo 7: Editores de texto
 Pergunta: Qual comando usado para criar um arquivo de texto chamado arquivo.txt de forma simples?
 A) cd /home/etc
 B) cd ..
@@ -671,10 +683,10 @@ C) cd
 D) :s/ssh/SSH
 Resposta Correta: :s/ssh/SSH
 
-Pergunta: Substitua todas as palavras ssh por SSH na linha atual ?
+Pergunta: Substitua todas as palavras ssh por SSH em todas as linhas ?
 A) cd /home/etc
 B) cd ..
-C) cd
+C) cd4
 D) :s/ssh/SSH/g
 Resposta Correta: :s/ssh/SSH/g
 
@@ -727,7 +739,476 @@ C) cd
 D) tail -f /var/log/syslog
 Resposta Correta: tail -f /var/log/syslog
 
+Módulo 8: Processos e Privilégios
+Pergunta: Qual comando é usado para editar o arquivo /etc/sudoers?
 
+A) nano /etc/sudoers
+B) visudo
+C) vim /etc/sudoers
+D) sudo nano /etc/sudoers
+
+Resposta Correta: visudo
+
+Pergunta: Qual comando mostra os grupos aos quais o usuário atual pertence?
+
+A) id
+B) whoami
+C) groups
+D) groupadd
+Resposta Correta: groups
+
+Pergunta: Qual arquivo contém a lista de grupos do sistema e seus membros?
+
+A) /etc/passwd
+B) /etc/sudoers
+C) /etc/shadow
+D) /etc/group
+Resposta Correta: /etc/group
+
+Pergunta: Qual comando permite acessar o terminal como usuário root?
+
+A) su
+B) sudo su
+C) sudo
+D) root su
+Resposta Correta: sudo su
+
+Pergunta: Qual comando é usado para ver o conteúdo do arquivo /etc/group?
+
+A) cat /etc/passwd
+B) cat /etc/group
+C) groups /etc/group
+D) ls /etc/group
+
+Resposta Correta: cat /etc/group
+
+Pergunta: Qual comando é usado para alterar a senha de um usuário geromora no Linux?
+
+A) passwd -u user
+B) changepasswd user
+C) passwd geromora
+D) sudo passwd -u user
+
+Resposta Correta: passwd geromora
+
+Pergunta: Qual comando permite visualizar o conteúdo do banco de dados de usuários do sistema?
+
+A) cat /etc/shadow
+B) view /etc/passwd
+C) sudo cat /etc/passwd
+D) list /etc/passwd
+
+Resposta Correta: sudo cat /etc/passwd
+
+Pergunta: Qual comando exibe uma lista de todos os processos em execução?
+
+A) ps
+B) ps -a
+C) ps -e
+D) ps -ef
+
+Resposta Correta: ps -e
+
+Pergunta: Qual comando exibe uma lista detalhada dos processos, incluindo o usuário dono e o ID do processo?
+
+A) ps -e
+B) ps -a
+C) ps -aux
+D) ps -ef
+
+Resposta Correta: ps -ef
+
+Pergunta: Qual comando exibe processos com informações sobre consumo de memória e CPU?
+
+A) ps -e
+B) ps aux
+C) ps -ef
+D) ps auxf
+
+Resposta Correta: ps aux
+
+Pergunta: Qual comando é usado para listar os processos de forma interativa?
+
+A) top -i
+B) ps aux
+C) top
+D) ps -e
+
+Resposta Correta: top
+
+Pergunta: Dentro do comando top, qual atalho é usado para listar processos por consumo de CPU?
+
+A) C
+B) P
+C) m
+D) n
+
+Resposta Correta: P
+
+Pergunta: Dentro do comando top, qual atalho é usado para listar processos por consumo de memória?
+
+A) C
+B) P
+C) m
+D) n
+
+Resposta Correta: m
+
+Pergunta: Qual comando instala o serviço Apache no sistema?
+
+A) sudo install apache2
+B) sudo apt-get apache2
+C) sudo apt install apache2
+D) sudo apt-add apache2
+
+Resposta Correta: sudo apt install apache2
+
+Pergunta: Qual comando verifica o status do serviço Apache?
+
+A) sudo service apache2 status
+B) sudo service apache2 check
+C) sudo systemctl status apache2
+D) sudo systemctl check apache2
+
+Resposta Correta: sudo service apache2 status
+
+Pergunta: Qual comando inicia o serviço Apache?
+
+A) sudo start apache2
+B) sudo apache2 start
+C) sudo service apache2 run
+D) sudo service apache2 start
+
+Resposta Correta: sudo service apache2 start
+
+Pergunta: Qual comando para o serviço Apache?
+
+A) sudo stop apache2
+B) sudo apache2 stop
+C) sudo service apache2 stop
+D) sudo service apache2 end
+
+Resposta Correta: sudo service apache2 stop
+
+Módulo 9: Usuários e Privilégios
+
+Pergunta: Qual comando cria um novo usuário chamado geromora no sistema sem criar suas dependências?
+
+A) sudo adduser nome_do_usuário
+B) sudo useradd geromora
+C) newuser nome_do_usuário
+D) createuser nome_do_usuário
+
+Resposta Correta: sudo useradd geromora
+
+Pergunta: Qual comando cria um novo usuário chamado geromora no sistema e configura todas as dependências necessárias?
+
+A) sudo adduser geromora
+B) useradd nome_do_usuário
+C) newuser nome_do_usuário
+D) createuser nome_do_usuário
+
+Resposta Correta: sudo adduser geromora
+
+Pergunta: leia as hashes das senhas dos usuários no sistema Linux?
+
+A) cat /etc/passwd
+B) /etc/group
+C) /etc/shadow
+D) /etc/user
+
+Resposta Correta: cat /etc/shadow
+
+Pergunta: Qual comando é usado para identificar em quais grupos o usuário geromora está?
+
+A) groups geromora
+B) groupadd nome_do_usuário
+C) group nome_do_usuário
+D) usergroups nome_do_usuário
+
+Resposta Correta: groups geromora
+
+Pergunta: Qual comando é usado para acessar o shell com o usuario geromora3?
+
+A) sudo usuario
+B) su - geromora3
+C) switch usuario
+D) changeuser usuario
+
+Resposta Correta: su - geromora3
+
+Pergunta: Qual comando é usado para criar um novo grupo chamado triplex no sistema?
+
+A) sudo groupadd triplex
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo groupadd triplex
+
+Pergunta: Qual comando é usado para deletar um grupo chamado triplex no sistema?
+
+A) sudo groupdel triplex
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo groupdel triplex
+
+Pergunta: Qual comando é usado para deletar um usuario chamado geromora3 no sistema?
+
+A) sudo userdel geromora3
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo userdel geromora3
+
+Pergunta: Qual comando é usado para deletar um usuario chamado geromora3 no sistema?
+
+A) sudo userdel geromora3
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo userdel geromora3
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev?
+
+A) sudo usermod -aG dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -aG dev geromora
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev como secundario?
+
+A) sudo usermod -aG dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -aG dev geromora
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev como primário?
+
+A) sudo usermod -ag dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -ag dev geromora
+
+Pergunta: Em qual diretório consigo adicionar o usuário a um grupo específico, edite esse diretório?
+
+A) sudo vi /etc/groups
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo vi /etc/groups
+
+Pergunta: tenho a seguinte linha na tela em /etc/groups, dev:1001 como adicionar o usuario geromora e estrole?
+
+A) dev:1001:geromora,estrole
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: dev:1001:geromora,estrole
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os others tenha acesso apenas a leitura?
+
+A) sudo chmod 774 /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod 774 /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os others tenha acesso apenas a leitura sem user base octal?
+
+A) sudo chmod o+r /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod o+r /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os usuario principal tenha acesso apenas a leitura e escrita?
+
+A) sudo chmod u+rw /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod u+rw /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que o grupo principal tenha acesso apenas a execução e leitura?
+
+A) sudo chmod g+rx /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod g+rx /projetos
+
+Pergunta: Altere o usuario dono para o diretorio /projetos para geromora ?
+
+A) sudo chown geromora /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chown geromora /projetos
+
+Pergunta: Altere o usuario dono para geromora e o grupo dev para o diretorio /projetos ?
+
+A) sudo chown geromora:dev /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chown geromora:dev /projetos
+
+Pergunta: Quero que quando eu criar um arquivo na minha pasta atual ela tenha mesma permissão que meu diretorio pai tem estou em /projetos ?
+
+A) sudo chmod g+s /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod g+s /projetos
+
+
+Pergunta: Quero criar um link para que quando meu atalho for excluido não exclua o diretorio origem, como faço isso sabendo que o nome do diretorio é /arquivos ?
+
+A) ln -s /arquivos arquivos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: ln -s /arquivos arquivos
+
+Módulo 10: Gerenciamento de pacotes
+
+Pergunta: Qual o comando para atualizar o seu linux ?
+
+A) sudo apt update
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt update
+
+Pergunta: Qual o comando para instalar apache2 no seu linux ?
+
+A) sudo apt install apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt install apache2
+
+Pergunta: Qual o comando para buscar pacotes do seu apache2 no seu linux ?
+
+A) sudo apt search apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt search apache2
+
+Pergunta: Qual o comando para habilitar serviço apache2 na inicialização do seu linux ?
+
+A) sudo systemctl enable apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo systemctl enable apache2
+
+Pergunta: Qual o comando para atualizar as versões dos seus pacotes no linux ?
+
+A) sudo apt upgrade
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt upgrade
+
+Pergunta: Qual o comando para descobrir quais versões dos seus pacotes no linux precisam de atualização?
+
+A) sudo apt list --upgradable
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list --upgradable
+
+Pergunta: Qual o comando para descobrir quais os seus pacotes no linux?
+
+A) sudo apt list
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list
+
+Pergunta: Qual o comando para remover o pacote do apache2 no linux?
+
+A) sudo apt remove apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt remove apache2
+
+Pergunta: Qual o comando para remover o pacote do apache2 no linux?
+
+A) sudo apt remove apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt remove apache2
+
+Pergunta: Qual o comando para remover as dependências dos pacotes excluidos?
+
+A) sudo apt autoremove
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt autoremove
+
+Pergunta: Qual o comando para verificar os pacotes instalados no seu linux usando grep e colocar no arquivo instalados.txt?
+
+A) sudo apt list | grep installed > instalados.txt
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list | grep installed > instalados.txt
+
+Pergunta: Qual o comando para verificar os pacotes instalados no seu linux usando flag?
+
+A) sudo apt list --installed
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list --installed
+
+Pergunta: Qual o comando para verificar a versão do serviço apache2 no seu linux?
+
+A) sudo apt show apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt show apache2
 
 
 
