@@ -20,7 +20,7 @@ class QuizApp(QWidget):
         self.lives = 5
         self.consecutive_errors = 0
         self.heart_icon_path = 'heart_icon.png'  # Salve a imagem nesse caminho antes de executar
-        self.question_already_read = False  # Variável de controle
+        self.question_already_read = False  # Variável depyenv controle
         pygame.mixer.init()  # Inicializa o mixer do pygame
         self.initUI()
 

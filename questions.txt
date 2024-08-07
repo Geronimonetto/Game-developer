@@ -1210,5 +1210,25 @@ D) sudo creategroup nome_do_grupo
 
 Resposta Correta: sudo apt show apache2
 
+Pergunta: Qual o comando para listar os hardwares da sua maquina?
+
+A) sudo lshw
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo lshw
+
+Pergunta: Qual o comando para listar os hardwares da sua maquina?
+
+A) sudo lshw
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo lshw
+
+
+
 
 
