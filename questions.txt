@@ -347,7 +347,7 @@ Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 2 di
 A) cd /home/etc
 B) cd ..
 C) cd
-D) find . -atime -5
+D) find . -atime -2
 Resposta Correta: find . -atime -2
 
 Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 100MB, com super permissão?
