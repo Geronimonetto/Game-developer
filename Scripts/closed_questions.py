@@ -14,12 +14,12 @@ class QuizApp(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.modules = load_questions_from_txt('questions.txt')
+        self.modules = load_questions_from_txt('questions/questions.txt')
         self.questions = []
         self.current_question_index = 0
         self.lives = 5
         self.consecutive_errors = 0
-        self.heart_icon_path = 'heart_icon.png'  # Salve a imagem nesse caminho antes de executar
+        self.heart_icon_path = 'icons/heart_icon.png'  # Salve a imagem nesse caminho antes de executar
         self.question_already_read = False  # Variável depyenv controle
         pygame.mixer.init()  # Inicializa o mixer do pygame
         self.initUI()

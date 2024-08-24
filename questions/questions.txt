@@ -1,41 +1,41 @@
 Módulo 1: Comandos iniciais
-Pergunta: Qual comando usado para descobrir em que diretorio estamos?
+Pergunta: Qual comando usado para descobrir qual o diretório atual?
 A) pwd
 B) ls
 C) pwd -l
 D) ls -l
 Resposta Correta: pwd
 
-Pergunta: Qual o comando para listar arquivos ocultos no diretorio?
+Pergunta: Qual o comando para listar arquivos ocultos no diretório?
 A) ls -a
 B) ls -l
 C) ls
 D) ls -c
 Resposta Correta: ls -a
 
-Pergunta: eu quero descobrir quais são as permissões dos meus diretorios qual comando usar?
+Pergunta: Qual o comando para descobrir as permissões do diretório atual?
 A) ls -al
 B) ls -l
 C) ls
 D) ls -c
-Resposta Correta: ls -al
+Resposta Correta: ls -l
 
-Pergunta: Qual o atalho para ver os arquivos ocultos e permissões do diretorio?
+Pergunta: Qual o atalho para verificar permissões e pastas do diretório atual?
 A) ll
 B) ls -l
 C) ls -a
 D) ls -c
 Resposta Correta: ll
 
-Pergunta: Qual o atalho para ver os arquivos do diretorio?
+Pergunta: Qual o comando para verificar o conteúdo do diretório atual?
 A) ll
 B) ls -l
 C) ls -a
 D) ls
 Resposta Correta: ls
 
-Pergunta: Eu quero descobrir quais são os atalhos do comando cd qual comando usar?
-A) ll
+Pergunta: Qual a flag de ajuda para saber as opções do comando cd?
+A) cd --help
 B) ls -l
 C) ls -a
 D) ls
@@ -48,21 +48,21 @@ C) ls -a
 D) ls
 Resposta Correta: clear
 
-Pergunta: Estou na /home/usuario e quero entrar na pasta /etc como poderia fazer isso sabendo que /etc está dentro de /home?
+Pergunta: Estou em ~/home/usuario e quero entrar na pasta home/etc, qual o comando usar?
 A) cd /home/etc
 B) cd ..
 C) cd .
 D) cd /var
 Resposta Correta: cd /home/etc
 
-Pergunta: Qual o comando para ir direto para home área?
+Pergunta: Qual comando mais simples para ir direto para /home?
 A) cd /home/etc
 B) cd ..
 C) cd
 D) cd /var
 Resposta Correta: cd
 
-Pergunta: Acabei de sair de um diretorio e quero retornar para ele de forma prática, qual comando usar?
+Pergunta: Estou querendo voltar para o diretório anterior, porém não sei em qual diretório estava, qual comando usar?
 A) cd /home/etc
 B) cd ..
 C) cd
