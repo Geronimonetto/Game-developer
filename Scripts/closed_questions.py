@@ -14,7 +14,7 @@ class QuizApp(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.modules = load_questions_from_txt('questions/questions.txt')
+        self.modules = self.select_questions()
         self.questions = []
         self.current_question_index = 0
         self.lives = 5
@@ -191,6 +191,14 @@ class QuizApp(QWidget):
         shuffle(self.questions)
         self.display_question()
 
+    def select_questions(self):
+        path = input("Qual o conteúdo para estudar: ")
+        path = path.upper()
+        match path:
+            case "GITHUB":
+                return load_questions_from_txt('questions/github_questions.txt')
+            case "LINUX":
+                return load_questions_from_txt('questions/questions.txt')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
