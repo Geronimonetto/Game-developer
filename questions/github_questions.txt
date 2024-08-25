@@ -1,0 +1,58 @@
+Módulo 1: Comandos iniciais
+Pergunta: Qual o comando para configurar o nome do usuario global do git para haraldsigurdson?
+A) git config --global --name haraldsigurdson
+B) git config --local --name haraldsigurdson
+C) git config --system --name haraldsigurdson
+D) git config --global user.name "haraldsigurdson"
+Resposta Correta: git config --global user.name "haraldsigurdson"
+
+Pergunta: Quero modificar o email global do git para harald@gmail.com como faço?
+A) git config --global user.email harald@gmail.com
+B) git config --system user.email harald@gmail.com
+C) git config --local user.email harald@gmail.com
+D) git config --global --email harald@gmail.com
+Resposta Correta: git config --global user.email harald@gmail.com
+
+Pergunta: Como saber o nome do usuario configurado globalmente no meu git?
+A) git config --global user.name
+B) git config --global --name
+C) git config --global user.email
+D) git config --local --name
+Resposta Correta: git config --global user.name
+
+Pergunta: Qual o atalho para verificar permissões e pastas do diretório atual?
+A) git config --global user.email
+B) git config --global --email
+C) git config --global user.email
+D) git config --local --email
+Resposta Correta: git config --global user.email
+
+Pergunta: Como eu verifico o nome das branchs padrões a serem criadas no meu git?
+A) git config init.defaultBranch
+B) git config --global --branch
+C) git config --global user.email
+D) git config --local --name
+Resposta Correta: git config init.defaultBranch
+
+Pergunta: Modifique a criação de branch padrão para main?
+A) git config --defaultBranch main
+B) git config --global defaultBranch main
+C) git config main
+D) git config init.defaultBranch main
+Resposta Correta: git config init.defaultBranch main
+
+Pergunta: Qual comando para listar as configurações globais do git?
+A) git config --global --list
+B) git config --global -list
+C) git config --list
+D) git --list
+Resposta Correta: git config --global --list
+
+Módulo 2: Configurações de credenciais
+
+Pergunta: Qual comando para salvar as credenciais dos tokens temporariamente?
+A) git config credential.helper cache
+B) git config credential.helper store
+C) git config credential.help
+D) git config credential store
+Resposta Correta: git config credential.helper cache
