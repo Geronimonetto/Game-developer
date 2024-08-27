@@ -56,3 +56,262 @@ B) git config credential.helper store
 C) git config credential.help
 D) git config credential store
 Resposta Correta: git config credential.helper cache
+
+Pergunta: Qual comando para salvar as credenciais dos tokens definitivamente globalmente?
+A) git config credential.helper cache
+B) git config credential.helper store
+C) git config credential.help
+D) git config credential store
+Resposta Correta: git config --global credential.helper store
+
+Pergunta: Qual o comando para ver nossa pasta onde estão localizadas nossas credenciais?
+A) git config credential.helper cache
+B) git config --global --show-origin credential.helper
+C) git config credential.help
+D) git config credential store
+Resposta Correta: git config --global --show-origin credential.helper
+
+Pergunta: Qual o comando Linux para verificar se existem chaves ssh no seu computador?
+A) git config credential.helper cache
+B) git config --global --show-origin credential.helper
+C) git config credential.help
+D)  ls -al ~/.ssh
+Resposta Correta: ls -al ~/.ssh
+
+Pergunta: Qual o comando para gerar uma nova chave ssh no git para o email haraldsigurdson@gmail.com?
+A) git config credential.helper cache
+B) git config --global --show-origin credential.helper
+C) ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com"
+D)  ls -al ~/.ssh
+Resposta Correta: ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com" 
+
+Pergunta: Qual o comando para gerar uma nova chave ssh no git para o email haraldsigurdson@gmail.com?
+A) git config credential.helper cache
+B) eval "$(ssh-agent -s)"
+C) ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com"
+D)  ls -al ~/.ssh
+Resposta Correta: eval "$(ssh-agent -s)"
+
+Pergunta: Qual o comando para gerar uma nova chave ssh no git para o email haraldsigurdson@gmail.com?
+A) git config credential.helper cache
+B) eval "$(ssh-agent -s)"
+C) ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com"
+D) ssh-add ~/.ssh/id_ed25519
+Resposta Correta: ssh-add ~/.ssh/id_ed25519
+
+Pergunta: Qual o comando para encontrar as chaves publicas e privadas ssh?
+A) git config credential.helper cache
+B) eval "$(ssh-agent -s)"
+C) ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com"
+D) cd ~/.ssh
+Resposta Correta: cd ~/.ssh
+
+Pergunta: Qual o comando para encontrar as chaves publicas e privadas ssh, entre nessa pasta e leia o conteúdo em um só código, lembrar de salvar a chave pública no seu github?
+A) git config credential.helper cache
+B) eval "$(ssh-agent -s)"
+C) ssh-keygen -t ed25519 -C "haraldsigurdson@gmail.com"
+D) cd ~/.ssh | ls
+Resposta Correta: cd ~/.ssh | ls
+
+Módulo 3: Comandos essenciais
+
+Pergunta: Qual comando verifica o todas as modificações feitas em commits?
+A) git status
+B) git branch
+C) git end
+D) git reflog
+Resposta Correta: git reflog
+
+Pergunta: Qual comando verifica o status dos seus arquivos ?
+A) git status
+B) git branch
+C) git end
+D) git remote rm origin 
+Resposta Correta: git status
+
+Pergunta: Qual comando verifica o status dos seus arquivos ?
+A) git log
+B) git branch
+C) git end
+D) git remote rm origin 
+Resposta Correta: git log
+Pergunta: Qual o comando para iniciar um repositório remoto?
+A) git config
+B) git branch
+C) git end
+D) git init
+Resposta Correta: git init
+
+Módulo 4: Clonando repositórios
+Pergunta: Qual comando para clonar um repositório com url haraldsigurdson.git?
+A) git config
+B) git branch
+C) git end
+D) git clone haraldsigudson.git
+Resposta Correta: git clone haraldsigudson.git
+
+Pergunta: Entre na pasta .git e leia o conteúdo de config?
+A) cd .git | cat git/config
+B) git branch
+C) git end
+D) git clone haraldsigudson.git
+Resposta Correta: cd .git | cat git/config
+
+Pergunta: Entre na pasta .git e leia o conteúdo de config?
+A) cd .git | cat git/config
+B) git branch
+C) git end
+D) git clone haraldsigudson.git
+Resposta Correta: cd .git | cat git/config
+
+Pergunta: Adicione um repositório remoto chamado origin com a url harald.git?
+A) cd .git | cat git/config
+B) git branch
+C) git end
+D) git remote add origin harald.git
+Resposta Correta: git remote add origin harald.git
+
+Pergunta: Qual o comando para verificar quais são as origin do seu repo?
+A) cd .git | cat git/config
+B) git branch
+C) git end
+D) git remote -v
+Resposta Correta: git remote -v
+
+Pergunta: clone o repositorio harald.git trazendo apenas a branch main?
+A) git clone harald.git --branch main --single-branch
+B) git branch
+C) git end
+D) git remote rm origin 
+Resposta Correta: git clone harald.git --branch main --single-branch
+
+Módulo 5: Modificações e restauração
+
+Pergunta: Fiz uma alteração no meu arquivo design.txt, porém quero que ele volte ao mesmo padrão antes da modificação, qual comando usar?
+A) git restore design.txt
+B) git reset --hard
+C) git reset
+D) git remote rm origin 
+Resposta Correta: git restore design.txt
+
+Pergunta: Enviei um commit para meu repositório remoto, porém identifiquei que estava fora do padrão, como modifica-lo, quero que o novo commit seja "Ajuste final"?
+A) git commit --amend -m "Ajuste final"
+B) git reset --hard
+C) git reset
+D) git remote rm origin 
+Resposta Correta: git commit --amend -m "Ajuste final"
+
+Pergunta: Enviei um commit para meu repositório remoto, porém identifiquei que estava fora do padrão, como modifica-lo no vi?
+A) git commit --amend
+B) git reset --hard
+C) git reset
+D) git remote rm origin 
+Resposta Correta: git commit --amend
+
+Pergunta: Como restaurar a partir de um commit e ver os arquivos no staged, sabendo que o commit é asdwds?
+A) git reset --soft asdwds
+B) git reset --hard
+C) git reset --mixed
+D) git remote rm origin 
+Resposta Correta: git reset --soft asdwds
+
+Pergunta: Como restaurar a partir de um commit e ver os arquivos antes de serem adicionados pelo git add, sabendo que o commit é asdwds?
+A) git reset --soft 
+B) git reset --hard
+C) git reset --mixed asdwds
+D) git remote rm origin 
+Resposta Correta: git reset --mixed asdwds
+
+Pergunta: Como restaurar a partir de um commit excluindo todas as modificações posteriores?
+A) git reset --soft 
+B) git reset --hard asdwds
+C) git reset --mixed
+D) git remote rm origin 
+Resposta Correta: git reset --hard asdwds
+
+Pergunta: Como restaurar a partir de um commit excluindo todas as modificações posteriores?
+A) git reset --soft 
+B) git reset --hard asdwds
+C) git reset --mixed
+D) git remote rm origin 
+Resposta Correta: git reset --hard asdwds
+
+Módulo 6: Subindo e atualizando branchs
+
+Pergunta: Qual comando para subir modificações indicando que a main será nossa branch upstream?
+A) git reset --soft 
+B) git reset --hard asdwds
+C) git reset --mixed
+D) git push -u origin main
+Resposta Correta: git push -u origin main
+
+Pergunta: Qual comando atualizar sua branch atual o todas as modificações feitas no repositório remoto?
+A) git status
+B) git branch
+C) git end
+D) git pull
+Resposta Correta: git pull
+
+Pergunta: Qual comando para ir para uma branch chamada developer?
+A) git status
+B) git branch
+C) git end
+D) git checkout developer
+Resposta Correta: git checkout developer
+
+Pergunta: Qual comando para criar uma branch chamada developer?
+A) git status
+B) git branch
+C) git end
+D) git checkout -b developer
+Resposta Correta: git checkout -b Developer
+
+Pergunta: Qual comando para verificar para qual commit as branchs estão apontando?
+A) git status
+B) git branch
+C) git end
+D) git branch -v
+Resposta Correta: git branch -v
+
+Pergunta: Qual comando para mergear conteúdos da branch developer para nossa branch atual?
+A) git status
+B) git branch
+C) git end
+D) git merge developer
+Resposta Correta: git merge developer
+
+Pergunta: Qual comando para mergear conteúdos da branch remota para nossa branch atual?
+A) git status
+B) git branch
+C) git end
+D) git merge origin/main
+Resposta Correta: git merge origin/main
+
+Pergunta: Qual comando para deletar uma branch chamada developer?
+A) git status
+B) git branch
+C) git end
+D) git branch -d developer
+Resposta Correta: git merge origin/main
+
+Pergunta: Qual comando para baixar as atualizações da branch remota?
+A) git status
+B) git branch
+C) git end
+D) git fetch origin main
+Resposta Correta: git fetch origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
