@@ -20,7 +20,7 @@ C) git config --global user.email
 D) git config --local --name
 Resposta Correta: git config --global user.name
 
-Pergunta: Qual o atalho para verificar permissões e pastas do diretório atual?
+Pergunta: Qual o atalho para verificar o email padrão global?
 A) git config --global user.email
 B) git config --global --email
 C) git config --global user.email
@@ -114,6 +114,27 @@ D) cd ~/.ssh | ls
 Resposta Correta: cd ~/.ssh | ls
 
 Módulo 3: Comandos essenciais
+
+Pergunta: Qual comando para arquivar uma modificação e excluir do arquivamento?
+A) git status
+B) git branch
+C) git end
+D) git stash pop
+Resposta Correta: git stash pop
+
+Pergunta: Qual comando para arquivar uma modificação e manter salvo no arquivamento ?
+A) git status
+B) git branch
+C) git end
+D) git stash apply
+Resposta Correta: git stash apply
+
+Pergunta: Qual comando para arquivar uma modificação ?
+A) git status
+B) git branch
+C) git end
+D) git stash
+Resposta Correta: git stash
 
 Pergunta: Qual comando verifica o todas as modificações feitas em commits?
 A) git status
@@ -300,6 +321,15 @@ B) git branch
 C) git end
 D) git fetch origin main
 Resposta Correta: git fetch origin main
+
+Pergunta: Qual comando para ver a diferença entre uma branch main e a branch remota origin?
+A) git status
+B) git branch
+C) git end
+D) git diff main origin/main
+Resposta Correta: git diff main origin/main
+
+
 
 
 
