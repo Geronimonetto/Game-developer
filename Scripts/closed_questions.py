@@ -6,7 +6,6 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QLineEdi
     QHBoxLayout, QComboBox
 from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QFont, QPixmap
-from gtts import gTTS
 from questions import load_questions_from_txt
 from random import shuffle
 
@@ -19,9 +18,9 @@ class QuizApp(QWidget):
         self.current_question_index = 0
         self.lives = 5
         self.consecutive_errors = 0
-        self.heart_icon_path = 'icons/heart_icon.png'  # Salve a imagem nesse caminho antes de executar
-        self.question_already_read = False  # Variável depyenv controle
-        pygame.mixer.init()  # Inicializa o mixer do pygame
+        self.heart_icon_path = 'icons/heart_icon.png'
+        self.question_already_read = False
+        pygame.mixer.init()
         self.initUI()
 
     def initUI(self):
@@ -38,7 +37,6 @@ class QuizApp(QWidget):
         self.layout.addWidget(self.start_button)
 
         self.setLayout(self.layout)
-
         self.setWindowTitle('Quiz App')
         self.setGeometry(100, 100, 800, 600)
         self.center_window()
@@ -104,7 +102,7 @@ class QuizApp(QWidget):
 
         self.setLayout(self.layout)
 
-        self.setStyleSheet("""
+        self.setStyleSheet(""" 
             QWidget {
                 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(240, 248, 255, 255), stop:1 rgba(173, 216, 230, 255));
             }
@@ -131,21 +129,22 @@ class QuizApp(QWidget):
             self.options = question["options"]
             self.update_remaining_questions()
 
-            # Leia a questão em voz alta após um pequeno atraso para garantir que ela seja exibida na tela primeiro
-            if not self.question_already_read:
-                QTimer.singleShot(500, lambda: self.read_question_aloud(question["question"]))
-                self.question_already_read = True  # Marcar como já lida
+            # Remove a linha abaixo para evitar a leitura em voz alta da pergunta
+            # if not self.question_already_read:
+            #     QTimer.singleShot(500, lambda: self.read_question_aloud(question["question"]))
+            #     self.question_already_read = True
         else:
             QMessageBox.information(self, "Fim do Quiz", "Você concluiu todas as perguntas!")
             self.close()
 
-    def read_question_aloud(self, question_text):
-        tts = gTTS(text=question_text, lang='pt')
-        with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as f:
-            temp_path = f.name
-            tts.save(temp_path)
-        pygame.mixer.music.load(temp_path)
-        pygame.mixer.music.play()
+    # Remover a função read_question_aloud
+    # def read_question_aloud(self, question_text):
+    #     tts = gTTS(text=question_text, lang='pt')
+    #     with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as f:
+    #         temp_path = f.name
+    #         tts.save(temp_path)
+    #     pygame.mixer.music.load(temp_path)
+    #     pygame.mixer.music.play()
 
     def update_hearts(self):
         for i in range(5):
@@ -165,7 +164,7 @@ class QuizApp(QWidget):
             QMessageBox.information(self, "Resposta Correta", "Parabéns, você acertou!")
             self.consecutive_errors = 0
             self.current_question_index += 1
-            self.question_already_read = False  # Redefinir para a próxima pergunta
+            self.question_already_read = False
             self.display_question()
         else:
             self.lives -= 1
@@ -187,7 +186,7 @@ class QuizApp(QWidget):
     def restart_game(self):
         self.lives = 5
         self.current_question_index = 0
-        self.question_already_read = False  # Redefinir para o reinício do jogo
+        self.question_already_read = False
         shuffle(self.questions)
         self.display_question()
 
@@ -199,6 +198,8 @@ class QuizApp(QWidget):
                 return load_questions_from_txt('questions/github_questions.txt')
             case "LINUX":
                 return load_questions_from_txt('questions/questions.txt')
+            case "NUMPY":
+                return load_questions_from_txt('questions/numpy.txt')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

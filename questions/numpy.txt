@@ -1,0 +1,120 @@
+Módulo 1: Comandos iniciais
+Pergunta: leia uma url utilizando numpy, essa API tem 87 colunas e o delimitador , a variável para os dados é dados?
+A) dados = np.loadtxt(url, delimiter =',', usecols= np.arange(1,88))
+B) dados = np.loadtxt(url, delimiter =',', usecols= np.arange(1,87))
+C) dados = np.loadtxt(url, delimiter =',', usecols= np.arange(1,89))
+D) dados = np.loadtxt(url, delimiter =';', usecols= np.arange(1,88))
+Resposta Correta: dados = np.loadtxt(url, delimiter = ',', usecols = np.arange(1,88))
+
+Pergunta: transforme a lista = [1,2,3,4] em um array do numpy?
+A) dados = np.arange(10)
+B) dados = np.numpy(lista)
+C) np.array(lista)
+D) *
+Resposta Correta: np.array(lista)
+
+Pergunta: Qual comando retorna o número de dimensões do array dados?  
+A) dados.size  
+B) dados.ndim  
+C) dados.shape  
+D) *  
+Resposta Correta: dados.ndim
+
+Pergunta: Qual comando retorna o número total de elementos no array dados?  
+A) dados.ndim  
+B) dados.shape  
+C) dados.size  
+D) *  
+Resposta Correta: dados.size
+
+Pergunta: Qual comando retorna as dimensões do array dados (número de linhas e colunas)?  
+A) dados.ndim  
+B) dados.size  
+C) dados.shape  
+D) *  
+Resposta Correta: dados.shape
+
+Pergunta: Qual comando retorna a transposição do array dados?  
+A) dados.T  
+B) dados.shape  
+C) dados.size  
+D) *  
+Resposta Correta: dados.T
+
+Pergunta: Dado que dados_transposto é a transposição de dados, qual comando retorna a primeira coluna de dados_transposto?  
+A) dados_transposto[0, :]  
+B) dados_transposto[:, 0]  
+C) dados_transposto.T[:, 0]  
+D) *  
+Resposta Correta: dados_transposto[:, 0]
+
+
+Pergunta: Qual comando plota os preços ao longo das datas para a primeira coluna (Moscou) dos dados precos?  
+A) plt.plot(datas, precos[:, 0])  
+B) plt.pyplot.plot(datas, precos)  
+C) plt.pyplot.plot(datas, precos[:, 0])  
+D) plt.plot(precos[:, 0], datas)  
+Resposta Correta: plt.pyplot.plot(datas, precos[:, 0])
+
+Pergunta: Qual comando extrai os preços para a cidade de Moscou a partir do array precos?  
+A) moscou = precos[:, 0]  
+B) moscou = precos[0, :]  
+C) moscou = precos[0]  
+D) moscou = precos[:, 1]  
+Resposta Correta: moscou = precos[:, 0]
+
+Pergunta: Qual comando verifica se os arrays moscou_ano3 e moscou_ano4 são exatamente iguais?  
+A) np.array_equal(moscou_ano3, moscou_ano4)  
+B) np.allclose(moscou_ano3, moscou_ano4)  
+C) np.equal(moscou_ano3, moscou_ano4)  
+D) np.isclose(moscou_ano3, moscou_ano4)  
+Resposta Correta: np.array_equal(moscou_ano3, moscou_ano4)
+
+Pergunta: Qual comando verifica se moscou_ano3 e moscou_ano4 são aproximadamente iguais, com uma tolerância padrão?  
+A) np.array_equal(moscou_ano3, moscou_ano4)  
+B) np.allclose(moscou_ano3, moscou_ano4)  
+C) np.close(moscou_ano3, moscou_ano4)  
+D) np.equal(moscou_ano3, moscou_ano4)  
+Resposta Correta: np.allclose(moscou_ano3, moscou_ano4)
+
+Pergunta: Qual comando plota os preços ao longo das datas para a cidade de Kaliningrado?  
+A) plt.pyplot.plot(datas, kaliningard)  
+B) plt.pyplot.plot(datas, moscou)  
+C) plt.plot(kaliningard, datas)  
+D) plt.plot(datas[:, 0], kaliningard)  
+Resposta Correta: plt.pyplot.plot(datas, kaliningard)
+
+Pergunta: Qual comando conta o número de valores NaN no array kaliningard?  
+A) np.isnan(kaliningard)  
+B) np.sum(isnan(kaliningard))  
+C) sum(np.isnan(kaliningard))  
+D) np.sum(kaliningard)  
+Resposta Correta: sum(np.isnan(kaliningard))
+
+Pergunta: Como podemos substituir o valor NaN no índice 4 do array kaliningard pela média dos elementos vizinhos, no índice 3 e 5?  
+A) kaliningard[4] = mean([kaliningard[3], kaliningard[5]])  
+B) kaliningard[4] = np.mean([kaliningard[3], kaliningard[5]])  
+C) kaliningard[4] = kaliningard.mean([3, 5])  
+D) kaliningard[4] = mean(kaliningard[3:5])  
+Resposta Correta: kaliningard[4] = np.mean([kaliningard[3], kaliningard[5]])
+
+Pergunta: Qual comando calcula a média dos valores do array moscou?  
+A) np.mean(moscou)  
+B) mean(moscou)  
+C) np.mean([moscou])  
+D) mean([moscou])  
+Resposta Correta: np.mean([moscou])
+
+Pergunta: Qual comando calcula a norma entre moscou e uma linha ajustada y definida como y = 0.52*x + 80?  
+A) np.linalg.norm(moscou + y)  
+B) np.norm(moscou - y)  
+C) np.linalg.norm(moscou - y)  
+D) norm(moscou - y)  
+Resposta Correta: np.linalg.norm(moscou - y)
+
+Pergunta: Qual comando plota a série de valores moscou e a linha ajustada y ao longo de x?  
+A) plt.plot(x, y, moscou)  
+B) plt.pyplot.plot(x, moscou) plt.pyplot.plot(x, y)  
+C) plt.pyplot.plot(x, moscou - y)  
+D) plt.plot(moscou, y)  
+Resposta Correta: plt.pyplot.plot(x, moscou) plt.pyplot.plot(x, y)
