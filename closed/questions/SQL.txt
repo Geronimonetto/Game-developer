@@ -1,0 +1,120 @@
+Módulo 1: Comandos iniciais (Closed)
+Pergunta: Qual subgrupo da linguagem SQL é responsável por consultar dados em uma ou mais tabelas?
+A) DDL (Data Definition Language)
+B) DML (Data Manipulation Language)
+C) DQL (Data Query Language)
+D) DCL (Data Control Language)
+Resposta Correta: C
+
+Pergunta: O que significa o subgrupo DML (Data Manipulation Language) na linguagem SQL?
+A) Conjunto de comandos para criar e alterar tabelas e bancos de dados.
+B) Conjunto de comandos para manipular dados em tabelas, como inserir, atualizar e deletar.
+C) Conjunto de comandos para gerenciar transações de dados.
+D) Conjunto de comandos para controlar permissões de acesso a dados.
+Resposta Correta: B
+
+Pergunta: Qual subgrupo da linguagem SQL é usado para criar, alterar ou excluir estruturas como tabelas e bancos de dados?
+A) DML (Data Manipulation Language)
+B) DQL (Data Query Language)
+C) DCL (Data Control Language)
+D) DDL (Data Definition Language)
+Resposta Correta: D
+
+Pergunta: O que o subgrupo DCL (Data Control Language) engloba na linguagem SQL?
+A) Comandos para iniciar, confirmar ou reverter transações de dados.
+B) Comandos para controlar permissões de acesso e segurança em bancos de dados.
+C) Comandos para consultar dados em tabelas.
+D) Comandos para alterar a estrutura de tabelas e bancos de dados.
+Resposta Correta: B
+
+Pergunta: Qual subgrupo da linguagem SQL é responsável por gerenciar transações, garantindo a consistência dos dados?
+A) DTL (Data Transaction Language)
+B) DDL (Data Definition Language)
+C) DCL (Data Control Language)
+D) DML (Data Manipulation Language)
+Resposta Correta: A
+
+Pergunta: Qual comando pertence ao subgrupo DQL?
+A) SELECT
+B) INSERT
+C) CREATE
+D) GRANT
+Resposta Correta: A
+
+Pergunta: Qual das opções abaixo é um exemplo de comando do subgrupo DML?
+A) GRANT
+B) UPDATE
+C) DROP
+D) ROLLBACK
+Resposta Correta: B
+
+Pergunta: O comando CREATE TABLE pertence a qual subgrupo da linguagem SQL?
+A) DML (Data Manipulation Language)
+B) DDL (Data Definition Language)
+C) DQL (Data Query Language)
+D) DCL (Data Control Language)
+Resposta Correta: B
+
+Pergunta: Quais são os comandos principais do subgrupo DTL (Data Transaction Language)?
+A) SELECT, INSERT, UPDATE
+B) CREATE, ALTER, DROP
+C) BEGIN, COMMIT, ROLLBACK
+D) GRANT, REVOKE
+Resposta Correta: C
+
+Pergunta: O comando REVOKE pertence a qual subgrupo da linguagem SQL?
+A) DDL (Data Definition Language)
+B) DML (Data Manipulation Language)
+C) DCL (Data Control Language)
+D) DTL (Data Transaction Language)
+Resposta Correta: C
+
+Pergunta: Qual subgrupo da linguagem SQL é responsável por selecionar dados de uma ou mais tabelas?
+A) DML (Data Manipulation Language)
+B) DDL (Data Definition Language)
+C) DQL (Data Query Language)
+D) DTL (Data Transaction Language)
+Resposta Correta: C
+
+Pergunta: O que o comando GRANT faz em um banco de dados?
+A) Remove permissões de um usuário.
+B) Autoriza um usuário a realizar determinadas operações.
+C) Cria uma nova tabela ou banco de dados.
+D) Exclui dados de uma tabela.
+Resposta Correta: B
+
+Pergunta: Qual a principal diferença entre os comandos DELETE e DROP?
+A) DELETE remove dados de uma tabela enquanto DROP remove toda a tabela ou banco de dados.
+B) DELETE remove dados temporariamente enquanto DROP remove permanentemente.
+C) DELETE remove tabelas enquanto DROP cria tabelas.
+D) Ambos comandos têm a mesma funcionalidade.
+Resposta Correta: A
+
+Pergunta: Em qual subgrupo da linguagem SQL se encontra o comando INSERT?
+A) DDL (Data Definition Language)
+B) DQL (Data Query Language)
+C) DML (Data Manipulation Language)
+D) DTL (Data Transaction Language)
+Resposta Correta: C
+
+Pergunta: Para que serve o comando COMMIT em uma transação?
+A) Desfazer todas as alterações feitas durante a transação.
+B) Confirmar e salvar permanentemente as alterações feitas durante a transação.
+C) Iniciar uma nova transação.
+D) Selecionar dados de uma tabela para confirmar a transação.
+Resposta Correta: B
+
+Pergunta: O que significa o uso de um alias (AS) em uma consulta SQL?
+A) Adicionar um novo campo a uma tabela.
+B) Alterar o nome de exibição de uma coluna ou tabela em uma consulta.
+C) Filtrar os resultados de uma consulta.
+D) Excluir colunas desnecessárias de uma tabela.
+Resposta Correta: B
+
+Pergunta: Qual comando é utilizado para excluir uma coluna específica de uma tabela existente?
+A) DROP COLUMN
+B) ALTER TABLE
+C) DELETE COLUMN
+D) ALTER TABLE DROP COLUMN
+Resposta Correta: D
+

@@ -1,0 +1,63 @@
+Módulo 1: Comandos iniciais (Open)
+Pergunta: Selecione as colunas código, nome e valor da tabela produtos.
+A) SELECT codigo, nome, valor FROM produtos
+B) SELECT * FROM produtos
+C) SELECT valor, nome, codigo FROM produtos
+D) SELECT nome, codigo, valor FROM tabela_produtos
+Resposta Correta: SELECT codigo, nome, valor FROM produtos;
+
+Pergunta: Insira o valor "notebook" na tabela produto na coluna nome.
+A) INSERT INTO tabela_produto(nome) VALUES('notebook')
+B) INSERT INTO produto(nome) VALUES("notebook")
+C) INSERT INTO produto(nome) VALUES(notebook)
+D) INSERT INTO produto(nome, preco) VALUES("notebook", 2000)
+Resposta Correta: INSERT INTO produto(nome) VALUES("notebook");
+
+Pergunta: Atualize o nome notebook para nobreak na tabela produto no código 1.
+A) UPDATE produto SET nome = "nobreak"
+B) UPDATE produto SET nome = "notebook" WHERE codigo = 1
+C) UPDATE tabela_produto SET nome = "nobreak" WHERE codigo_produto = 1
+D) UPDATE produto SET nome = "nobreak" WHERE codigo = 1
+Resposta Correta: UPDATE produto SET nome = "nobreak" WHERE codigo = 1;
+
+Pergunta: Qual comando é utilizado para criar uma tabela chamada "clientes" com as colunas "id" (inteiro e chave primária) e "nome" (texto de até 50 caracteres)?
+A) CREATE DATABASE clientes;
+B) CREATE TABLE clientes (id INT PRIMARY KEY, nome VARCHAR(50));
+C) INSERT INTO clientes(id, nome) VALUES (1, 'João');
+D) ALTER TABLE clientes ADD id INT PRIMARY KEY;
+Resposta Correta: CREATE TABLE clientes (id INT PRIMARY KEY, nome VARCHAR(50));
+
+Pergunta: Como remover permissões de criação de tabelas para o usuário "admin"?
+A) DELETE FROM usuarios WHERE nome = 'admin';
+B) REVOKE CREATE DATABASE FROM admin;
+C) REVOKE CREATE TABLE FROM admin;
+D) GRANT SELECT ON tabelas TO admin;
+Resposta Correta: REVOKE CREATE TABLE FROM admin;
+
+Pergunta: Qual comando é usado para alterar a tabela "clientes" adicionando uma coluna "email" de até 100 caracteres?
+A) CREATE TABLE clientes ADD COLUMN email VARCHAR(100);
+B) ALTER TABLE clientes ADD email VARCHAR(100);
+C) UPDATE clientes SET email = 'exemplo@dominio.com';
+D) ALTER DATABASE clientes ADD COLUMN email VARCHAR(100);
+Resposta Correta: ALTER TABLE clientes ADD email VARCHAR(100);
+
+Pergunta: Qual comando seleciona todos os registros da tabela "produtos" onde o preço seja maior que 50?
+A) SELECT * FROM produtos WHERE preco > 50;
+B) SELECT * FROM produtos WHERE preco >= 50;
+C) SELECT preco FROM produtos WHERE preco > 50;
+D) SELECT * FROM tabela_produtos WHERE preco > 50;
+Resposta Correta: SELECT * FROM produtos WHERE preco > 50;
+
+Pergunta: Como excluir todos os registros da tabela "vendas" que tenham o código igual a 10?
+A) DELETE FROM vendas WHERE codigo=10;
+B) DROP TABLE vendas WHERE codigo=10;
+C) REMOVE FROM vendas WHERE codigo=10;
+D) DELETE TABLE vendas WHERE codigo=10;
+Resposta Correta: DELETE FROM vendas WHERE codigo=10;
+
+Pergunta: Qual comando inicia uma transação para inserir dados na tabela "produtos" e finaliza confirmando a transação?
+A) BEGIN INSERT INTO produtos VALUES ('Notebook'); ROLLBACK;
+B) BEGIN TRANSACTION; INSERT INTO produtos VALUES ('Notebook'); COMMIT;
+C) START TRANSACTION; INSERT INTO produtos ('Notebook'); END;
+D) INSERT INTO produtos ('Notebook'); COMMIT TRANSACTION;
+Resposta Correta: BEGIN TRANSACTION; INSERT INTO produtos VALUES ('Notebook'); COMMIT;

@@ -1,0 +1,140 @@
+### Módulo 1: Introdução ao MongoDB (Open)
+
+Pergunta: Qual comando é utilizado para iniciar o servidor do MongoDB no Linux?  
+A) sudo systemctl enable mongod  
+B) sudo systemctl start mongod  
+C) mongosh  
+D) db.createCollections("acessos")  
+Resposta Correta: sudo systemctl start mongod
+
+
+Pergunta: Qual comando no MongoDB é usado para selecionar ou criar um banco de dados?  
+A) use  
+B) db.createCollection  
+C) show dbs  
+D) db.find()  
+Resposta Correta: use
+
+
+Pergunta: Qual comando é usado para criar uma coleção no MongoDB?  
+A) db.createCollection("nome_da_colecao")  
+B) db.nome_da_colecao.insert()  
+C) db.createCollections("nome_da_colecao")  
+D) db.insert("nome_da_colecao")  
+Resposta Correta: db.createCollection("nome_da_colecao")
+
+
+
+Pergunta: Como inserir um documento com nome e e-mail na coleção "pessoas"?  
+A) db.pessoas.create({"nome":"Geronimo","email":"geronimo@gmail.com"})  
+B) db.pessoas.insert({"nome":"Geronimo","email":"geronimo@gmail.com"})  
+C) db.insert({"nome":"Geronimo","email":"geronimo@gmail.com"})  
+D) db.createCollection({"nome":"Geronimo","email":"geronimo@gmail.com"})  
+Resposta Correta: db.pessoas.insert({"nome":"Geronimo","email":"geronimo@gmail.com"})
+
+
+Pergunta: Qual comando é utilizado para exibir os bancos de dados disponíveis?  
+A) db.show()  
+B) show databases  
+C) show dbs  
+D) db.find()  
+Resposta Correta: show dbs
+
+
+Pergunta: Como buscar todos os registros da coleção "pessoas"?  
+A) db.pessoas.find()  
+B) db.find("pessoas")  
+C) db.pessoas.query()  
+D) db.query("pessoas")  
+Resposta Correta: db.pessoas.find()
+
+
+Pergunta: Como buscar registros na coleção "pessoas" com a chave "nome" igual a "Geronimo" e formatar a saída de maneira organizada?  
+A) db.pessoas.find("nome":"Geronimo").pretty()  
+B) db.pessoas.find({"nome":"Geronimo"}).pretty()  
+C) db.pessoas.query("nome":"Geronimo")  
+D) db.pessoas.find().organize()  
+Resposta Correta: db.pessoas.find({"nome":"Geronimo"}).pretty()
+
+
+Pergunta: Como criar um documento com uma chave aninhada em "pessoas" que inclui habilidades (nome e nível) onde o nível é Básico?  
+A) db.pessoas.insert({"nome":"Geronimo","skills":{"Python":"Básico"}})  
+B) db.pessoas.create({"nome":"Geronimo","skills":{"Python":"Básico"}})  
+C) db.pessoas.insert({"nome":"Geronimo","skills":{"nome":"Python","nivel":"Básico"}})  
+D) db.pessoas.insert({"nome":"Geronimo","habilidades":{"nome":"Python","nivel":"Básico"}})  
+Resposta Correta: db.pessoas.insert({"nome":"Geronimo","skills":{"nome":"Python","nivel":"Básico"}})
+
+
+Pergunta: Como buscar registros na coleção "pessoas" com a habilidade Python no nível Básico?  
+A) db.pessoas.find({"skills.nome":"Python","skills.nivel":"Básico"})  
+B) db.pessoas.find({"Skills.nome":"Python","Skills.Nivel":"Básico"})  
+C) db.pessoas.query({"Skills.nome":"Python","Skills.Nivel":"Básico"})  
+D) db.pessoas.query("Skills.nome":"Python","Skills.Nivel":"Básico")  
+Resposta Correta: db.pessoas.find({"Skills.nome":"Python","Skills.Nivel":"Básico"})
+
+
+Pergunta: Qual comando é utilizado para filtrar registros que atendem a pelo menos uma das condições definidas para nome Geronimo e Eunice?  
+A) db.pessoas.find({$or:[{"nome":"Geronimo"},{"nome":"Eunice"}]})  
+B) db.pessoas.filter({"nome":"Geronimo"},"or",{"nome":"Eunice"})  
+C) db.pessoas.query({"$or":[{"nome":"Geronimo"},{"nome":"Eunice"}]})  
+D) db.pessoas.find({"$and":[{"nome":"Geronimo"},{"nome":"Eunice"}]})  
+Resposta Correta: db.pessoas.find({$or:[{"nome":"Geronimo"},{"nome":"Eunice"}]})
+
+Pergunta: Como buscar registros na coleção "pessoas" onde o nome seja "Geronimo" e a rua da escola seja "Arnica" ou "União da Vitória"?  
+A) db.pessoas.find({"Nome":"Geronimo","Escola.rua":{"$in":["Arnica","União da Vitória"]}})  
+B) db.pessoas.find({$or:[{"Nome":"Geronimo"},{"Escola.rua":{"$in":["Arnica","União da Vitória"]}}]})  
+C) db.pessoas.find({"Nome":"Geronimo"}).find({"Escola.rua":{"$in":["Arnica","União da Vitória"]}})  
+D) db.pessoas.find({$and:[{"Nome":"Geronimo"},{"Escola.rua":{"$in":["Arnica","União da Vitória"]}}]})  
+Resposta Correta: A) db.pessoas.find({"Nome":"Geronimo","Escola.rua":{"$in":["Arnica","União da Vitória"]}})
+
+
+Pergunta: Qual comando insere um documento contendo o nome "Geronimo Morais" e as notas [8,5,6,8,10]?  
+A) db.pessoas.insert({"nome":"Geronimo Morais","notas":[8,5,6,8,10]})  
+B) db.pessoas.add({"nome":"Geronimo Morais","notas":[8,5,6,8,10]})  
+C) db.pessoas.save({"nome":"Geronimo Morais","notas":[8,5,6,8,10]})  
+D) db.pessoas.update({"nome":"Geronimo Morais"},{"notas":[8,5,6,8,10]})  
+Resposta Correta: A) db.pessoas.insert({"nome":"Geronimo Morais","notas":[8,5,6,8,10]})
+
+
+Pergunta: Como atualizar apenas o campo curso.nome de um documento específico no MongoDB?  
+A) db.collections.update({"curso.nome":"Programação para internet"},{"curso.nome":"Programação para Internet"})  
+B) db.collections.update({"curso.nome":"Programação para internet"},{$set:{"curso.nome":"Programação para Internet"}})  
+C) db.collections.modify({"curso.nome":"Programação para internet"},{"curso.nome":"Programação para Internet"})  
+D) db.collections.update({"curso.nome":"Programação para internet"},{"$set":{"curso.nome":"Programação para Internet"}},{multi:true})  
+Resposta Correta: B) db.collections.update({"curso.nome":"Programação para internet"},{$set:{"curso.nome":"Programação para Internet"}})
+
+
+Pergunta: Qual comando permite adicionar múltiplos valores [8.9, 10, 9] ao array nota?  
+A) db.collections.update({"id":"id do registro"},{$addToSet:{"nota":[8.9,10,9]}})  
+B) db.collections.update({"id":"id do registro"},{$push:{"nota":{$each:[8.9,10,9]}}})  
+C) db.collections.update({"id":"id do registro"},{$add:{"nota":{$each:[8.9,10,9]}}})  
+D) db.collections.update({"id":"id do registro"},{$append:{"nota":[8.9,10,9]}})  
+Resposta Correta: B) db.collections.update({"id":"id do registro"},{$push:{"nota":{$each:[8.9,10,9]}}})
+
+
+Pergunta: Como buscar documentos na coleção alunos que possuem notas maiores ou iguais a 9.0?  
+A) db.alunos.find({"notas":{"$lt":9.0}})  
+B) db.alunos.query({"notas":{"$gte":9.0}})  
+C) db.alunos.find({"notas":{"$gte":9.0}})  
+D) db.alunos.findOne({"notas":{"$gte":9.0}})  
+Resposta Correta: C) db.alunos.find({"notas":{"$gte":9.0}})
+
+
+Pergunta: Como ordenar os registros de alunos com notas maiores ou iguais a 9.0 em ordem decrescente pelo campo "aluno"?  
+A) db.alunos.find({"notas":{"$gte":9.0}}).order({"aluno":-1})  
+B) db.alunos.find({"notas":{"$gte":9.0}}).sort({"aluno":-1})  
+C) db.alunos.find({"notas":{"$gte":9.0}}).sort("aluno",-1)  
+D) db.alunos.find({"notas":{"$gte":9.0}}).order(-1)  
+Resposta Correta: B) db.alunos.find({"notas":{"$gte":9.0}}).sort({"aluno":-1})
+
+
+Pergunta: Qual comando limita os resultados de uma busca a apenas 3 documentos e exibe os resultados formatados?  
+A) db.alunos.find({"notas":{"$gte":9.0}}).limit(3).format()  
+B) db.alunos.find({"notas":{"$gte":9.0}}).sort({"aluno":1}).limit(3).pretty()  
+C) db.alunos.find({"notas":{"$gte":9.0}}).pretty().limit(3)  
+D) db.alunos.find({"notas":{"$gte":9.0}}).limit(3).sort({"aluno":1})  
+Resposta Correta: B) db.alunos.find({"notas":{"$gte":9.0}}).sort({"aluno":1}).limit(3).pretty()
+
+
+
+

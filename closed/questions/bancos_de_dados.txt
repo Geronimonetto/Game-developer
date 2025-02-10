@@ -1,0 +1,103 @@
+Módulo 1: Introdução a Bancos de dados
+
+Pergunta: Qual a diferença entre dado e informação?  
+A) Dados são o elemento bruto proveniente de uma entrada de usuário ou de outros sistemas, enquanto informação são elementos processados constituídos de dados.  
+B) Dados e informações são essencialmente a mesma coisa, com a diferença de que a informação tem mais valor.  
+C) Dados são informações processadas de maneira correta.  
+D) Dados são sempre números, enquanto informações são sempre palavras.  
+Resposta Correta: A
+
+
+Pergunta: A informação gera?  
+A) Sabedoria  
+B) Conhecimento  
+C) Dados  
+D) Processamento  
+Resposta Correta: B
+
+
+Pergunta: Por quem foram criados os bancos de dados relacionais?  
+A) Larry Ellison  
+B) Bill Gates  
+C) Charles Bachman  
+D) Edgar Frank Codd  
+Resposta Correta: D
+
+
+Pergunta: O que é SQL?  
+A) Linguagem padrão de banco de dados relacionais  
+B) Sistema de Gestão de Banco de Dados  
+C) Sistema para integração de dados  
+D) Linguagem de programação orientada a objetos  
+Resposta Correta: A
+
+
+Pergunta: Os bancos de dados relacionais estão vinculados a que modelos?  
+A) Modelagem relacional  
+B) Modelagem hierárquica  
+C) Modelagem orientada a objetos  
+D) Modelagem de dados plana  
+Resposta Correta: A
+
+
+Pergunta: Os SGBDs têm como princípio oferecer ao usuário:  
+A) Apenas a recuperação de falhas  
+B) Modelagem de dados  
+C) Validação, verificação e garantias de integridade, além disso, eles oferecem controle de concorrência, recuperação de falhas e segurança, controle de transações, otimização de consultas, dentre outros.  
+D) Apenas consultas rápidas  
+Resposta Correta: C
+
+
+Pergunta: Os pontos fracos dos bancos de dados relacionais são?  
+A) Dificuldade de conciliar dependendo da escalabilidade e dificuldade de organizar os dados em um sistema distribuído trabalhando com particionamento de dados  
+B) Alto custo de licenciamento e manutenção  
+C) Baixa segurança no armazenamento de dados  
+D) Limitações na integração com sistemas externos  
+Resposta Correta: A
+
+
+Pergunta: Os bancos de dados não relacionais podem ser orientados e baseados a?  
+A) Tabelas e Linhas  
+B) Objetos e classes  
+C) Arquivos e pastas  
+D) Documentos, Grafos, Colunas, Chaves e Valor  
+Resposta Correta: D
+
+
+Pergunta: Quais as vantagens dos bancos de dados não relacionais?  
+A) Fornecem replicação e particionamento além de promover maior escalabilidade e alta disponibilidade  
+B) Garantem maior consistência de dados em grandes volumes  
+C) Facilitam a utilização de dados estruturados  
+D) São mais rápidos em todas as consultas  
+Resposta Correta: A
+
+Pergunta: Quais dos bancos de dados abaixo não é um banco de dados relacional?  
+A) MySQL 
+B) MongoDB  
+C) PostgreSQL
+D) SQLite  
+Resposta Correta: B
+
+Módulo 2: Modelagem de dados
+
+Pergunta: Quais são os tipos de modelagem de bancos de dados?  
+A) 
+B)  
+C) Modelagem conceitual, Modelagem lógica e Modelagem física
+D)  
+Resposta Correta: C
+
+Pergunta: O que é uma modelagem conceitual?  
+A) A modelagem conceitual servem como documentação, é uma das partes mais importantes dos sistemas que auxiliam não somente os desenvolvedores que estão trabalhando no projeto
+B)  
+C) 
+D)  
+Resposta Correta: A
+
+Pergunta: Marque as opções com apenas modelagens conceituais?  
+A) 
+B)  
+C) 
+D)  Modelagem conceitual textual, Diagrama DER e Diagrama de classes
+Resposta Correta: D
+

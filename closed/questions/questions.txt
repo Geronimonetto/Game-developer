@@ -1,0 +1,1234 @@
+Módulo 1: Comandos iniciais
+Pergunta: Qual comando usado para descobrir qual o diretório atual?
+A) pwd
+B) ls
+C) pwd -l
+D) ls -l
+Resposta Correta: pwd
+
+Pergunta: Qual o comando para listar arquivos ocultos no diretório?
+A) ls -a
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -a
+
+Pergunta: Qual o comando para descobrir as permissões do diretório atual?
+A) ls -al
+B) ls -l
+C) ls
+D) ls -c
+Resposta Correta: ls -l
+
+Pergunta: Qual o atalho para verificar permissões e pastas do diretório atual?
+A) ll
+B) ls -l
+C) ls -a
+D) ls -c
+Resposta Correta: ll
+
+Pergunta: Qual o comando para verificar o conteúdo do diretório atual?
+A) ll
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: ls
+
+Pergunta: Qual a flag de ajuda para saber as opções do comando cd?
+A) cd --help
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: cd --help
+
+Pergunta: Qual o comando para limpar a tela?
+A) clear
+B) ls -l
+C) ls -a
+D) ls
+Resposta Correta: clear
+
+Pergunta: Estou em ~/home/usuario e quero entrar na pasta home/etc, qual o comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd .
+D) cd /var
+Resposta Correta: cd /home/etc
+
+Pergunta: Qual comando mais simples para ir direto para /home?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd
+
+Pergunta: Estou querendo voltar para o diretório anterior, porém não sei em qual diretório estava, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cd /var
+Resposta Correta: cd -
+
+Módulo 2: Criando e removendo arquivos e pastas
+
+Pergunta: Eu desejo criar um diretorio chamado valorant, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant
+
+Pergunta: Eu desejo criar um diretorio chamado valorant com outro diretorio chamado chars dentro dele, qual comando usar para cria-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir -p valorant/chars
+Resposta Correta: mkdir -p valorant/chars
+
+Pergunta: Estou criando um diretorio chamado valorant 2, porém cria 2 diretorios por conta do espaço como resolver isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant
+Resposta Correta: mkdir valorant\ 2
+
+Pergunta: Como eu crio um arquivo chamado champs?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs
+Resposta Correta: touch champs
+
+Pergunta: Como eu crio um arquivo chamado champs e outro chamado arms?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) touch champs arms
+Resposta Correta: touch champs arms
+
+Pergunta: Eu tenho um diretorio chamado valorant e quero excluir qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rmdir valorant
+Resposta Correta: rmdir valorant
+
+Pergunta: Eu tenho um diretorio chamado valorant e outro sub diretorio chamado chars dentro como excluir tudo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -r valorant
+Resposta Correta: rm -r valorant
+
+Pergunta: Qual comando eu forço uma remoção de diretorio chamado valorant?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm -rf valorant
+Resposta Correta: rm -rf valorant
+
+Pergunta: Eu tenho um arquivo chamado champs como exclui-lo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) rm champs
+Resposta Correta: rm champs
+
+Pergunta: Eu quero criar 2 diretorios valorant e league sem ser um dentro do outro?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mkdir valorant league
+Resposta Correta: mkdir valorant league
+
+Pergunta: Estou em um diretorio e quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r * ../valorant
+Resposta Correta: cp -r * ../valorant
+
+Pergunta: Estou em um diretorio chamado champs quero copiar tudo dele para o diretorio chamado valorant que está no mesmo nível como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cp -r champs/* valorant
+Resposta Correta: cp -r champs/* valorant
+
+Pergunta: Estou em um diretorio chamado valorant com conteúdo dentro e quero mover para diretorio champs como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant/* champs
+Resposta Correta: mv valorant/* champs
+
+Pergunta: Estou em um diretorio chamado valorant porém quero renomea-lo para champs como posso fazer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) mv valorant champs
+Resposta Correta: mv valorant champs
+
+Pergunta: Qual comando para ver o histórico de comandos utilizado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) history
+Resposta Correta: history
+
+Pergunta: Estou querendo descobrir os arquivos que tenham o prefixo arq?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq*
+Resposta Correta: ls arq*
+
+Pergunta: Quero descobrir os arquivos que tenham prefixo arq e tenham 2 caracteres depois?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq??
+Resposta Correta: ls arq??
+
+Pergunta: Quero descobrir arquivos que tenham 1?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls *1*
+Resposta Correta: ls *1*
+
+Pergunta: Quero descobrir arquivos que tenham prefixo arq e que tenham sufixo de 1 a 5?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls arq[1-5]
+Resposta Correta: ls arq[1-5]
+
+Pergunta: Quero descobrir os arquivos que tenham sufixo entre 1 a 5 e que tenham 3 caracteres antes?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls ???[1-5]
+Resposta Correta: ls ???[1-5]
+
+Pergunta: qual comando posso usar para ler um arquivo chamado services de forma geral?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat services
+Resposta Correta: cat services
+
+Módulo 3: Procurando texto em arquivos
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep http *
+Resposta Correta: grep http *
+
+Pergunta: Quero descobrir se  algum dos meus arquivos da pasta atual possui a string http porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir onde está localizada a string http nos meus arquivos da pasta atual porém ignorando os cases?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -i http *
+Resposta Correta: grep -i http *
+
+Pergunta: Quero descobrir em qual arquivo está localizada a string usuario nos meus arquivos da pasta atual?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep -l usuario *
+Resposta Correta: grep -l usuario *
+
+Pergunta: Qual o comando para descobrir o ip de uma maquina no linux?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ip addr
+Resposta Correta: ip addr
+
+Pergunta: Tenho uma maquina que tem o ip 192.172.1.13 e o usuario geromora como faço para obter uma conexão ssh?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ssh geromora@192.172.1.13
+Resposta Correta: ssh geromora@192.172.1.13
+
+Pergunta: Acabei de entrar em uma maquina linux e quero atualizar, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo apt update
+Resposta Correta: sudo apt update
+
+Módulo 4: Leitura de arquivos
+
+Pergunta: Tenho um arquivo com as senhas, o nome do arquivo é passwd, qual comando para ver o que tem no arquivo paginado?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) more passwd
+Resposta Correta: more passwd
+
+Pergunta: Como ler o que tem no arquivo passwd usando as setas pra cima e para baixo?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) less passwd
+Resposta Correta: less passwd
+
+Pergunta: Como ler o final do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail passwd
+Resposta Correta: tail passwd
+
+Pergunta: Como ler as ultimas 3 linhas finais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -n 3 passwd
+Resposta Correta: tail -n 3 passwd
+
+Pergunta: Como ler as linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head passwd
+Resposta Correta: head passwd
+
+Pergunta: Como ler as 3 linhas iniciais do conteúdo do arquivo passwd ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 3 passwd
+Resposta Correta: head -n 3 passwd
+
+Módulo 5: Buscando arquivos
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -name *.conf
+Resposta Correta: find / -name *.conf
+
+Pergunta: Como procurar os arquivos com final .conf nos seus diretorios com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find / -name *.conf
+Resposta Correta: sudo find / -name *.conf
+
+Pergunta: Quero procurar dentro de etc um arquivo porém com no máximo 3 pasta recursivas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find /etc -maxdepth 3 *.conf
+Resposta Correta: sudo find /etc -maxdepth 3 *.conf
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 5 minutos atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -amin -5
+Resposta Correta: find . -amin -5
+
+Pergunta: Quero descobrir quais arquivos na pasta atual foram modificados a 2 dias atras, qual comando usar?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find . -atime -2
+Resposta Correta: find . -atime -2
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 100MB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +100M
+Resposta Correta: sudo find . -size +100M
+
+Pergunta: Quero buscar os arquivos na pasta atual que tenham acima de 3GB, com super permissão?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo find . -size +3G
+Resposta Correta: sudo find . -size +3G
+
+Pergunta: Quero descobrir em todas as pastas os arquivos com final .conf ignorando o case, com 3 pastas apenas a frente?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) find / -maxdepth 3 -iname *.conf
+Resposta Correta: find / -maxdepth 3 -iname *.conf
+
+Pergunta: Qual o comando para ler os arquivos e mostrar os tamanhos?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -lh
+Resposta Correta: ls -lh
+
+Módulo 6: Lendo arquivos com expressões regulares
+
+Pergunta: Quero encontrar em services tudo sobre ssh e depois armazenar em um arquivo txt chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services > texto.txt
+Resposta Correta: grep ssh services > texto.txt
+
+Pergunta: Eu ja tenho um arquivo texto.txt e quero acrescentar as saidas do passwd que tenham root?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep root passwd >> texto.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver os arquivos do diretorio com a permissão e acrescentar ao arquivo texto.txt ja existente
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -l >> texto.txt
+Resposta Correta: ls -l texto.txt
+
+Pergunta: quero buscar tudo sobre ssh em services e colocar em um arquivo chamado service.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services > service.txt
+Resposta Correta: grep ssh services > service.txt
+
+Pergunta: Quero ler tudo que tem em texto.txt e ordenar em um novo arquivo chamado texto2.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | sort > texto2.txt
+Resposta Correta: grep root passwd >> texto.txt
+
+Pergunta: Quero ver as ultimas 5 linhas do arquivo syslog e adicionar em um novo arquivo chamado texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -n 5 > texto.txt
+Resposta Correta: tail -n 5 > texto.txt
+
+Pergunta: Pegue as 50 primeiras linhas do arquivo services em etc e crie um novo arquivo chamado edit1.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) head -n 50 etc/services > edit1.txt
+Resposta Correta: head -n 50 etc/services > edit1.txt
+
+Pergunta: Tenho um arquivo chamado service.txt e quero incrementar tudo que tenha sobre ssh em services nele, como faço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) grep ssh services >> service.txt
+Resposta Correta: grep ssh services >> service.txt
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver a quantidade de linhas e bites?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc
+Resposta Correta: cat syslog | grep systemd | wc
+
+Pergunta: quero ler syslog encontrar tudo sobre systemd e ver apenas a quantidade de linhas?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat syslog | grep systemd | wc -l
+Resposta Correta: cat syslog | grep systemd | wc -l
+
+Pergunta: tenho um arquivo passwd em etc porém quero ler o que tem nele e ordenar de forma decrescente em um arquivo.txt, como posso fazer isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat /etc/passwd | sort > arquivo.txt
+Resposta Correta: cat /etc/passwd | sort > arquivo.txt
+
+
+Pergunta: Usando regex, como encontrar algo no arquivo chamado american-english que comece com computer?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer"
+Resposta Correta: cat american-english | grep -E "^computer"
+
+Pergunta: Usando regex, como encontrar algo no arquivo chamado american-english que comece e termine com computer e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer$" | > texto.txt
+Resposta Correta: cat american-english | grep -E "^computer$" | > texto.txt
+
+Pergunta: Usando regex com egrep, como encontrar algo no arquivo chamado american-english que comece e termine com computer e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | egrep "^computer$" | > texto.txt
+Resposta Correta: cat american-english | egrep "^computer$" | > texto.txt
+
+Pergunta: Usando regex com grep, como encontrar algo no arquivo chamado american-english que comece e termine com computer ou smartphone e colocar em um arquivo texto.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat american-english | grep -E "^computer$|^smartphone$" > texto.txt
+Resposta Correta: cat american-english | grep -E "^computer$|^smartphone$" > texto.
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com qualquer letra e tenha oot no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^.oot$" american-english
+Resposta Correta: egrep ".oot$" american-english
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f2
+Resposta Correta: cat texto.txt | cut -d " " -f2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f2
+Resposta Correta: cat texto.txt | cut -d " " -f2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do primeiro espaço até o segundo espaço?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f1-2
+Resposta Correta: cat texto.txt | cut -d " " -f1-2
+
+Pergunta: Temos um arquivo texto.txt, como ler de forma geral e cortar a partir do 5ª espaço porém trazendo do espaço 1 ao espaço 3?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat texto.txt | cut -d " " -f1-3,5
+Resposta Correta: cat texto.txt | cut -d " " -f1-3,5
+
+Pergunta: print na tela a palavra COMPUTER e escreva em um arquivo chamado service.txt?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) echo "COMPUTER" service.txt
+Resposta Correta: echo "COMPUTER" service.txt
+
+Pergunta: Para localizar uma string, tal como http, no início de cada linha de um arquivo como /etc/services, podemos usar um comando?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) cat /etc/services | grep -E "^http"
+Resposta Correta: cat /etc/services | grep -E "^http"
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com qualquer letra e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^.oot$..." american-english
+Resposta Correta: egrep ".oot$..." american-english
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com f r ou t  e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^[frt]oot$..." american-english
+Resposta Correta: egrep "^[frt].oot$..." american-english
+
+Pergunta: Usando regex com egrep, encontre no american-english algo que comece com l até o  e tenha oot e mais três letras aleatórias no final?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) egrep "^[l-o]oot$..." american-english
+Resposta Correta: egrep "^[l-o].oot$..." american-english
+
+Módulo 7: Editores de texto
+Pergunta: Qual comando usado para criar um arquivo de texto chamado arquivo.txt de forma simples?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) nano arquivo.txt
+Resposta Correta: nano arquivo.txt
+
+Pergunta: Qual comando para sair do VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :q
+Resposta Correta: :q
+
+Pergunta: Qual comando para sair sem salvar do VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :q!
+Resposta Correta: :q!
+
+Pergunta: Qual comando para inserir um texto no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) i
+Resposta Correta: i
+
+Pergunta: Qual comando para sair salvando no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :x
+Resposta Correta: :x
+
+Pergunta: como modificar uma letra sem precisar inserir nada no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) r
+Resposta Correta: r
+
+Pergunta: como modificar o nome do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :w
+Resposta Correta: :w
+
+Pergunta: como recortar uma linha no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) dd
+Resposta Correta: dd
+
+Pergunta: como recortar 5 linhas no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) 5 dd
+Resposta Correta: 5 dd
+
+Pergunta: como ir para o início do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) gg
+Resposta Correta: gg
+
+Pergunta: como ir para o final do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) G
+Resposta Correta: G
+
+Pergunta: como ir para a linha de numero 50 do arquivo no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :50
+Resposta Correta: :50
+
+Pergunta: quero ir para linhas que tenha a string ssh dentro do VI?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :ssh
+Resposta Correta: :ssh
+
+Pergunta: desfaça a ultima modificação feita no VI?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) u
+Resposta Correta: u
+
+Pergunta: cole a linha copiada depois da linha atual no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) p
+Resposta Correta: p
+
+Pergunta: cole a linha copiada antes da linha atual no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) P
+Resposta Correta: P
+
+Pergunta: copie as 5 linhas a frente no VI ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) 5 yy
+Resposta Correta: 5 yy
+
+Pergunta: Substitua a primeira palavra ssh por SSH na linha atual ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :s/ssh/SSH
+Resposta Correta: :s/ssh/SSH
+
+Pergunta: Substitua todas as palavras ssh por SSH em todas as linhas ?
+A) cd /home/etc
+B) cd ..
+C) cd4
+D) :s/ssh/SSH/g
+Resposta Correta: :s/ssh/SSH/g
+
+Pergunta: Substitua todas as palavras ssh por SSH globalmente ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) :%s/ssh/SSH/g
+Resposta Correta: :%s/ssh/SSH/g
+
+Pergunta: Qual o comando para ler as variáveis de ambiente ?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) env
+Resposta Correta: env
+
+Pergunta: Quero dar permissão para o usuario pode executar um arquivo chamado script.sh, como faço isso?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) chmod u+x script.sh
+Resposta Correta: chmod u+x script.sh
+
+Pergunta: Qual o comando para criar um script.sh?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) vi script.sh
+Resposta Correta: vi script.sh
+
+Pergunta: Qual o comando para descobrir nosso disco principal em /dev?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) ls -l /dev | grep sda
+Resposta Correta: ls -l /dev | grep sda
+
+Pergunta: Como encontrar em var o nosso log de autenticação e achar tudo com ssh em qualquer case?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) sudo cat /var/log/auth.log | grep -i ssh
+Resposta Correta: sudo cat /var/log/auth.log | grep -i ssh
+
+Pergunta: Como ver em tempo real as autenticações do computador no syslog?
+A) cd /home/etc
+B) cd ..
+C) cd
+D) tail -f /var/log/syslog
+Resposta Correta: tail -f /var/log/syslog
+
+Módulo 8: Processos e Privilégios
+Pergunta: Qual comando é usado para editar o arquivo /etc/sudoers?
+
+A) nano /etc/sudoers
+B) visudo
+C) vim /etc/sudoers
+D) sudo nano /etc/sudoers
+
+Resposta Correta: visudo
+
+Pergunta: Qual comando mostra os grupos aos quais o usuário atual pertence?
+
+A) id
+B) whoami
+C) groups
+D) groupadd
+Resposta Correta: groups
+
+Pergunta: Qual arquivo contém a lista de grupos do sistema e seus membros?
+
+A) /etc/passwd
+B) /etc/sudoers
+C) /etc/shadow
+D) /etc/group
+Resposta Correta: /etc/group
+
+Pergunta: Qual comando permite acessar o terminal como usuário root?
+
+A) su
+B) sudo su
+C) sudo
+D) root su
+Resposta Correta: sudo su
+
+Pergunta: Qual comando é usado para ver o conteúdo do arquivo /etc/group?
+
+A) cat /etc/passwd
+B) cat /etc/group
+C) groups /etc/group
+D) ls /etc/group
+
+Resposta Correta: cat /etc/group
+
+Pergunta: Qual comando é usado para alterar a senha de um usuário geromora no Linux?
+
+A) passwd -u user
+B) changepasswd user
+C) passwd geromora
+D) sudo passwd -u user
+
+Resposta Correta: passwd geromora
+
+Pergunta: Qual comando permite visualizar o conteúdo do banco de dados de usuários do sistema?
+
+A) cat /etc/shadow
+B) view /etc/passwd
+C) sudo cat /etc/passwd
+D) list /etc/passwd
+
+Resposta Correta: sudo cat /etc/passwd
+
+Pergunta: Qual comando exibe uma lista de todos os processos em execução?
+
+A) ps
+B) ps -a
+C) ps -e
+D) ps -ef
+
+Resposta Correta: ps -e
+
+Pergunta: Qual comando exibe uma lista detalhada dos processos, incluindo o usuário dono e o ID do processo?
+
+A) ps -e
+B) ps -a
+C) ps -aux
+D) ps -ef
+
+Resposta Correta: ps -ef
+
+Pergunta: Qual comando exibe processos com informações sobre consumo de memória e CPU?
+
+A) ps -e
+B) ps aux
+C) ps -ef
+D) ps auxf
+
+Resposta Correta: ps aux
+
+Pergunta: Qual comando é usado para listar os processos de forma interativa?
+
+A) top -i
+B) ps aux
+C) top
+D) ps -e
+
+Resposta Correta: top
+
+Pergunta: Dentro do comando top, qual atalho é usado para listar processos por consumo de CPU?
+
+A) C
+B) P
+C) m
+D) n
+
+Resposta Correta: P
+
+Pergunta: Dentro do comando top, qual atalho é usado para listar processos por consumo de memória?
+
+A) C
+B) P
+C) m
+D) n
+
+Resposta Correta: m
+
+Pergunta: Qual comando instala o serviço Apache no sistema?
+
+A) sudo install apache2
+B) sudo apt-get apache2
+C) sudo apt install apache2
+D) sudo apt-add apache2
+
+Resposta Correta: sudo apt install apache2
+
+Pergunta: Qual comando verifica o status do serviço Apache?
+
+A) sudo service apache2 status
+B) sudo service apache2 check
+C) sudo systemctl status apache2
+D) sudo systemctl check apache2
+
+Resposta Correta: sudo service apache2 status
+
+Pergunta: Qual comando inicia o serviço Apache?
+
+A) sudo start apache2
+B) sudo apache2 start
+C) sudo service apache2 run
+D) sudo service apache2 start
+
+Resposta Correta: sudo service apache2 start
+
+Pergunta: Qual comando para o serviço Apache?
+
+A) sudo stop apache2
+B) sudo apache2 stop
+C) sudo service apache2 stop
+D) sudo service apache2 end
+
+Resposta Correta: sudo service apache2 stop
+
+Módulo 9: Usuários e Privilégios
+
+Pergunta: Qual comando cria um novo usuário chamado geromora no sistema sem criar suas dependências?
+
+A) sudo adduser nome_do_usuário
+B) sudo useradd geromora
+C) newuser nome_do_usuário
+D) createuser nome_do_usuário
+
+Resposta Correta: sudo useradd geromora
+
+Pergunta: Qual comando cria um novo usuário chamado geromora no sistema e configura todas as dependências necessárias?
+
+A) sudo adduser geromora
+B) useradd nome_do_usuário
+C) newuser nome_do_usuário
+D) createuser nome_do_usuário
+
+Resposta Correta: sudo adduser geromora
+
+Pergunta: leia as hashes das senhas dos usuários no sistema Linux?
+
+A) cat /etc/passwd
+B) /etc/group
+C) /etc/shadow
+D) /etc/user
+
+Resposta Correta: cat /etc/shadow
+
+Pergunta: Qual comando é usado para identificar em quais grupos o usuário geromora está?
+
+A) groups geromora
+B) groupadd nome_do_usuário
+C) group nome_do_usuário
+D) usergroups nome_do_usuário
+
+Resposta Correta: groups geromora
+
+Pergunta: Qual comando é usado para acessar o shell com o usuario geromora3?
+
+A) sudo usuario
+B) su - geromora3
+C) switch usuario
+D) changeuser usuario
+
+Resposta Correta: su - geromora3
+
+Pergunta: Qual comando é usado para criar um novo grupo chamado triplex no sistema?
+
+A) sudo groupadd triplex
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo groupadd triplex
+
+Pergunta: Qual comando é usado para deletar um grupo chamado triplex no sistema?
+
+A) sudo groupdel triplex
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo groupdel triplex
+
+Pergunta: Qual comando é usado para deletar um usuario chamado geromora3 no sistema?
+
+A) sudo userdel geromora3
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo userdel geromora3
+
+Pergunta: Qual comando é usado para deletar um usuario chamado geromora3 no sistema?
+
+A) sudo userdel geromora3
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo userdel geromora3
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev?
+
+A) sudo usermod -aG dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -aG dev geromora
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev como secundario?
+
+A) sudo usermod -aG dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -aG dev geromora
+
+Pergunta: Qual comando é usado para adicionar um usuario geromora ao grupo dev como primário?
+
+A) sudo usermod -ag dev geromora
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo usermod -ag dev geromora
+
+Pergunta: Em qual diretório consigo adicionar o usuário a um grupo específico, edite esse diretório?
+
+A) sudo vi /etc/groups
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo vi /etc/groups
+
+Pergunta: tenho a seguinte linha na tela em /etc/groups, dev:1001 como adicionar o usuario geromora e estrole?
+
+A) dev:1001:geromora,estrole
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: dev:1001:geromora,estrole
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os others tenha acesso apenas a leitura?
+
+A) sudo chmod 774 /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod 774 /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os others tenha acesso apenas a leitura sem user base octal?
+
+A) sudo chmod o+r /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod o+r /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que os usuario principal tenha acesso apenas a leitura e escrita?
+
+A) sudo chmod u+rw /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod u+rw /projetos
+
+Pergunta: Altere a permissão para o diretorio /projetos, para que o grupo principal tenha acesso apenas a execução e leitura?
+
+A) sudo chmod g+rx /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod g+rx /projetos
+
+Pergunta: Altere o usuario dono para o diretorio /projetos para geromora ?
+
+A) sudo chown geromora /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chown geromora /projetos
+
+Pergunta: Altere o usuario dono para geromora e o grupo dev para o diretorio /projetos ?
+
+A) sudo chown geromora:dev /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chown geromora:dev /projetos
+
+Pergunta: Quero que quando eu criar um arquivo na minha pasta atual ela tenha mesma permissão que meu diretorio pai tem estou em /projetos ?
+
+A) sudo chmod g+s /projetos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo chmod g+s /projetos
+
+
+Pergunta: Quero criar um link para que quando meu atalho for excluido não exclua o diretorio origem, como faço isso sabendo que o nome do diretorio é /arquivos ?
+
+A) ln -s /arquivos arquivos
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: ln -s /arquivos arquivos
+
+Módulo 10: Gerenciamento de pacotes
+
+Pergunta: Qual o comando para atualizar o seu linux ?
+
+A) sudo apt update
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt update
+
+Pergunta: Qual o comando para instalar apache2 no seu linux ?
+
+A) sudo apt install apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt install apache2
+
+Pergunta: Qual o comando para buscar pacotes do seu apache2 no seu linux ?
+
+A) sudo apt search apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt search apache2
+
+Pergunta: Qual o comando para habilitar serviço apache2 na inicialização do seu linux ?
+
+A) sudo systemctl enable apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo systemctl enable apache2
+
+Pergunta: Qual o comando para atualizar as versões dos seus pacotes no linux ?
+
+A) sudo apt upgrade
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt upgrade
+
+Pergunta: Qual o comando para descobrir quais versões dos seus pacotes no linux precisam de atualização?
+
+A) sudo apt list --upgradable
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list --upgradable
+
+Pergunta: Qual o comando para descobrir quais os seus pacotes no linux?
+
+A) sudo apt list
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list
+
+Pergunta: Qual o comando para remover o pacote do apache2 no linux?
+
+A) sudo apt remove apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt remove apache2
+
+Pergunta: Qual o comando para remover o pacote do apache2 no linux?
+
+A) sudo apt remove apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt remove apache2
+
+Pergunta: Qual o comando para remover as dependências dos pacotes excluidos?
+
+A) sudo apt autoremove
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt autoremove
+
+Pergunta: Qual o comando para verificar os pacotes instalados no seu linux usando grep e colocar no arquivo instalados.txt?
+
+A) sudo apt list | grep installed > instalados.txt
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list | grep installed > instalados.txt
+
+Pergunta: Qual o comando para verificar os pacotes instalados no seu linux usando flag?
+
+A) sudo apt list --installed
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt list --installed
+
+Pergunta: Qual o comando para verificar a versão do serviço apache2 no seu linux?
+
+A) sudo apt show apache2
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo apt show apache2
+
+Pergunta: Qual o comando para listar os hardwares da sua maquina?
+
+A) sudo lshw
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo lshw
+
+Pergunta: Qual o comando para listar os hardwares da sua maquina?
+
+A) sudo lshw
+B) sudo addgroup nome_do_grupo
+C) sudo newgroup nome_do_grupo
+D) sudo creategroup nome_do_grupo
+
+Resposta Correta: sudo lshw
+
+
+
+
+
