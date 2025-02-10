@@ -1,0 +1,65 @@
+Módulo 1: Introdução à Engenharia de Dados (Closed)  
+
+Pergunta: 1. Qual das alternativas melhor define engenharia de dados?  
+A) Área focada exclusivamente em visualização de dados.  
+B) Processo de análise e modelagem estatística de dados.  
+C) Área responsável por estruturar, manter, desenvolver e garantir a disponibilidade dos dados.  
+D) Ciência que estuda padrões de dados por meio de Machine Learning.  
+Resposta Correta: C  
+
+Pergunta: 2. Quais são os principais aspectos envolvidos na manutenção dos dados?  
+A) Disponibilidade, Confiabilidade, Segurança, Planejamento e Monitoramento.  
+B) Apenas Segurança e Disponibilidade.  
+C) Velocidade e Volume.  
+D) Apenas Monitoramento e Planejamento.  
+Resposta Correta: A  
+
+Pergunta: 3. Quais são algumas das responsabilidades de um engenheiro de dados?  
+A) Criar modelos preditivos e dashboards.  
+B) Desenvolver Data Warehouses, Data Lakes, Processos de análise, Streaming e ETL/ELT.  
+C) Somente garantir a segurança dos dados.  
+D) Apenas executar queries SQL para relatórios gerenciais.  
+Resposta Correta: B  
+
+Pergunta: 4. Quais tipos de testes um engenheiro de dados deve realizar?  
+A) Testes de funcionalidade, desempenho, governança e segurança.  
+B) Apenas testes de performance.  
+C) Testes de usabilidade e design.  
+D) Testes apenas em ambientes de produção.  
+Resposta Correta: A  
+
+Pergunta: 5. Qual é o papel de um engenheiro de dados dentro de uma empresa?  
+A) Criar dashboards interativos.  
+B) Desenvolver, operar e manter estruturas de dados complexas, garantindo segurança, integridade, disponibilidade e confiabilidade.  
+C) Criar e treinar modelos de Machine Learning.  
+D) Gerar relatórios financeiros.  
+Resposta Correta: B  
+
+Pergunta: 6. Quais são algumas das principais atividades de um cientista de dados?  
+A) Criar e manter bancos de dados.  
+B) Criar modelos de Machine Learning, desenvolver artefatos de visualização e preparar dados para análise.  
+C) Apenas coletar e armazenar dados.  
+D) Configurar servidores para armazenamento de dados.  
+Resposta Correta: B  
+
+Pergunta: 7. O que é Big Data?  
+A) Apenas um banco de dados muito grande.  
+B) Um conceito que define o grande volume de dados gerados continuamente, caracterizado pelos 5 Vs.  
+C) Um software de gerenciamento de bancos de dados.  
+D) Uma linguagem de programação para análise de dados.  
+Resposta Correta: B  
+
+Pergunta: 8. Quais são os 5 Vs do Big Data?  
+A) Velocidade, Variedade, Volume, Veracidade e Valor.  
+B) Volume, Velocidade, Valor, Versatilidade e Verificação.  
+C) Validação, Velocidade, Variação, Volume e Visão.  
+D) Variedade, Valor, Volume, Validade e Virtualização.  
+Resposta Correta: A  
+
+Pergunta: 9. Qual é a quantidade aproximada de dados produzidos por um Boeing em cada voo?  
+A) 100 GB  
+B) 1 TB  
+C) 500 GB  
+D) 10 TB  
+Resposta Correta: C  
+
